@@ -9,7 +9,7 @@ def main():
 
     mentors = read_json_files('mentors')
     with open("_site/index.html", "w") as fh:
-        fh.write("<h1>OSDC Skeleton</h1>\n")
+        fh.write("<h1>OSDC 2023.01 Public</h1>\n")
         fh.write("<h2>Mentors</h2>\n")
         fh.write("<ul>\n")
         for mentor in mentors:
