@@ -23,7 +23,7 @@ def read_json_files(folder):
     for filename in os.listdir(folder):
         if filename == '.gitkeep':
             continue
-        elif not filename.endswith('.json'):
+        if not filename.endswith('.json'):
            raise JsonError("file does not end with .json")
         with open(os.path.join(folder, filename)) as fh:
             person = json.load(fh)
