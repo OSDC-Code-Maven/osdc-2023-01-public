@@ -43,11 +43,12 @@ https://code-maven.github.io/osdc-2023-01-public/
 * [GitHub](https://github.com/): process of contributing to an Open Source project using the GitHub web site. Editing and sending a Pull-Request. Use a the `cm-demo` user to make a change in the README of this repository and then to add the json file. Show how the CI fails when we add an incorrectly formatted file.
 * What is [JSON](https://www.json.org/)?
 
-* Show blogging platform
-    * [DEV](https://dev.to/) - See [my account](https://dev.to/szabgab/)
-    * [Hashnode](https://hashnode.com/) - See [my side](https://hash.code-maven.com/)
-
 * Show the Git repository of the project and the web site generated from it.
+
+* [Video](https://youtu.be/GFNQVWYCeb8)
+
+* After the video recording also mentioned https://kantoniko.com/
+* [issues](https://github.com/kantoniko/ladino-diksionaryo-code/issues)
 
 ### Assignment
 
@@ -63,12 +64,25 @@ https://code-maven.github.io/osdc-2023-01-public/
 * Send a pull-request to the GitHub repository of the course adding a JSON file. The name of the file should be your GitHub username and it should include key-value pairs as in the example. (The `posts` will be an empty list.) Check the result of GitHub Actions.
 * Join the Slack workspace (I send invitations to everyone to their email address.) and say hi.
 * Write a blog post about the course. In your post link to your GitHub and GitLab accounts and to your Pull-Request. If you encountered any issue, write about that and how you solved it. If you use an avatar instead of your own picture, describe how you created the avatar.
+* In the blog post tell us a bit about your background.
+    * What programming language(s) you use?
+    * Which interesting 3rd-party libraries do you use? You can mention big ones, but it is probably more interesting if you mention more esoteric ones.
+    * Include links to the home-page of each project and the GitHub/GitLab repository of each project.
+    * What would you like to accomplish in the course?
+    * Which open source projects would you like to contribute to.
 * Update your Pull-request adding the URL to the blog post to the `posts` field in the json file.
 
-
+* There are 3 GitHub repositories with lists of GitHub organization published by [higher education institutions](https://github.com/szabgab/open-source-by-higher-education), [governments](https://github.com/szabgab/open-source-by-government), and [corporations](https://github.com/szabgab/open-source-by-corporations). Find at leas 5 more repositories that we can add to either one of those lists. (e.g. find a list of universities and use the search feature of GitHub to find **organizations** that belong to the institute).
 
 
 ## Session 2
+
+Some items that were left out from the first session so we'll have to add them to the next session.
+
+* Show blogging platform
+    * [DEV](https://dev.to/) - See [my account](https://dev.to/szabgab/)
+    * [Hashnode](https://hashnode.com/) - See [my side](https://hash.code-maven.com/)
+
 
 * Version Control
     * Show the repo of [Flask](https://github.com/pallets/flask):
@@ -90,6 +104,4 @@ https://code-maven.github.io/osdc-2023-01-public/
 
 * Show [Slack](https://code-maven.slack.com/)
 
-* Show https://kantoniko.com/
-* [issues](https://github.com/kantoniko/ladino-diksionaryo-code/issues)
 
