@@ -2,7 +2,10 @@ import json
 import os
 import pathlib
 from jinja2 import Environment, FileSystemLoader
+import requests
 
+GITHUB_URL = "https://github.com"
+LINKED_URL = "https://linkedin.com"
 
 def main():
     if not os.path.exists("_site"):
@@ -37,6 +40,12 @@ def read_json_files(folder):
             person = json.load(fh)
         people.append(person)
     return people
+
+def check_url_for_participant(name: str) -> bool:
+    # params: name of the participant
+    r = requests.head(url)
+    return r.status_code == requests.codes.ok
+
 
 if __name__ == "__main__":
     main()
