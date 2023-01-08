@@ -43,10 +43,6 @@ https://code-maven.github.io/osdc-2023-01-public/
 * [GitHub](https://github.com/): process of contributing to an Open Source project using the GitHub web site. Editing and sending a Pull-Request. Use a the `cm-demo` user to make a change in the README of this repository and then to add the json file. Show how the CI fails when we add an incorrectly formatted file.
 * What is [JSON](https://www.json.org/)?
 
-* Show blogging platform
-    * [DEV](https://dev.to/) - See [my account](https://dev.to/szabgab/)
-    * [Hashnode](https://hashnode.com/) - See [my side](https://hash.code-maven.com/)
-
 * Show the Git repository of the project and the web site generated from it.
 
 * [Video](https://youtu.be/GFNQVWYCeb8)
@@ -79,6 +75,11 @@ https://code-maven.github.io/osdc-2023-01-public/
 ## Session 2
 
 Some items that were left out from the first session so we'll have to add them to the next session.
+
+* Show blogging platform
+    * [DEV](https://dev.to/) - See [my account](https://dev.to/szabgab/)
+    * [Hashnode](https://hashnode.com/) - See [my side](https://hash.code-maven.com/)
+
 
 * Version Control
     * Show the repo of [Flask](https://github.com/pallets/flask):
