@@ -13,6 +13,14 @@
 {% for person in participants %}
     <li>{{ person['name'] }}<br>
     GitHub: <a href="https://github.com/{{ person['github'] }}">{{ person['github'] }}</a><br>
+
+    {% if person['posts'] %}
+        <ul>
+        {% for post in person['posts'] %}
+            <li><a href="{{post['url']}}">post</a></li>
+        {% endfor %}
+        </ul>
+    {% endif %}
     </li>
 {% endfor %}
 </ul>
