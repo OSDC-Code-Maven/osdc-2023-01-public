@@ -25,6 +25,8 @@ def read_json_files(folder):
             continue
         if not filename.endswith('.json'):
            raise JsonError("file does not end with .json")
+        if filename != filename.lower():
+            raise Exception(f"filename {filename} should be all lower-case")
         with open(os.path.join(folder, filename)) as fh:
             person = json.load(fh)
         people.append(person)
