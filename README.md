@@ -47,6 +47,9 @@ https://code-maven.github.io/osdc-2023-01-public/
 
 * [Video](https://youtu.be/GFNQVWYCeb8)
 
+* After the video recording also mentioned https://kantoniko.com/
+* [issues](https://github.com/kantoniko/ladino-diksionaryo-code/issues)
+
 ### Assignment
 
 * You will have to publish a journal of your process. You can use any blogging platform, but let me suggest a few:
@@ -101,6 +104,4 @@ Some items that were left out from the first session so we'll have to add them t
 
 * Show [Slack](https://code-maven.slack.com/)
 
-* Show https://kantoniko.com/
-* [issues](https://github.com/kantoniko/ladino-diksionaryo-code/issues)
 
