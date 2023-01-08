@@ -9,6 +9,7 @@ def main():
         os.makedirs("_site")
 
     mentors = read_json_files('mentors')
+    participants = read_json_files('participants')
 
     template = 'index.html'
     templates_dir = pathlib.Path(__file__).parent.joinpath('templates')
@@ -16,6 +17,7 @@ def main():
     html_template = env.get_template(template)
     html_content = html_template.render(
         mentors = mentors,
+        participants = participants,
     )
     with open('_site/index.html', 'w') as fh:
         fh.write(html_content)

@@ -1,9 +1,18 @@
 <h1>OSDC 2023.01 Public</h1>
 <h2>Mentors</h2>
 <ul>
-{% for mentor in mentors %}
-    <li>{{ mentor['name'] }}<br>
-    GitHub: <a href="https://github.com/{{ mentor['github'] }}">{{ mentor['github'] }}</a><br>
+{% for person in mentors %}
+    <li>{{ person['name'] }}<br>
+    GitHub: <a href="https://github.com/{{ person['github'] }}">{{ person['github'] }}</a><br>
+    </li>
+{% endfor %}
+</ul>
+
+<h2>Participants</h2>
+<ul>
+{% for person in participants %}
+    <li>{{ person['name'] }}<br>
+    GitHub: <a href="https://github.com/{{ person['github'] }}">{{ person['github'] }}</a><br>
     </li>
 {% endfor %}
 </ul>
