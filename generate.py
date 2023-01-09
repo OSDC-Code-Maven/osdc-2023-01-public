@@ -3,6 +3,10 @@ import os
 import pathlib
 from jinja2 import Environment, FileSystemLoader
 
+def read_course_json():
+    with pathlib.Path(__file__).parent.joinpath('course.json').open() as fh:
+        return json.load(fh)
+
 
 def main():
     if not os.path.exists("_site"):
@@ -10,6 +14,7 @@ def main():
 
     mentors = read_json_files('mentors')
     participants = read_json_files('participants')
+    course = read_course_json()
 
     template = 'index.html'
     templates_dir = pathlib.Path(__file__).parent.joinpath('templates')
@@ -18,6 +23,8 @@ def main():
     html_content = html_template.render(
         mentors = mentors,
         participants = participants,
+        course = course,
+        title = course['title'],
     )
     with open('_site/index.html', 'w') as fh:
         fh.write(html_content)

@@ -1,6 +1,13 @@
 {% include 'header.html' %}
 
-<h1 class="title">OSDC 2023.01 Public</h1>
+<h1 class="title">{{title}}</h1>
+
+Start date: {{course.start_date}}
+{% if course.end_date %}
+  End date: {{course.end_date}}
+{% endif %}
+
+
 <h2 class="title">Mentors</h2>
 {% for person in mentors %}
    <div class="box person">
