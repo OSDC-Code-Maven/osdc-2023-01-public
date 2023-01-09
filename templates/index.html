@@ -16,6 +16,9 @@ Start date: {{course.start_date}}
 {% endfor %}
 
 <h2 class="title">Participants</h2>
+
+Number of participants: {{ participants | count }}
+
 {% for person in participants %}
    <div class="box person">
     {% include 'person.html' %}
