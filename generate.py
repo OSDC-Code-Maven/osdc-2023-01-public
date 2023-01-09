@@ -1,29 +1,38 @@
 import json
 import os
+import pathlib
+from jinja2 import Environment, FileSystemLoader
 
 
 def main():
     if not os.path.exists("_site"):
         os.makedirs("_site")
 
-
     mentors = read_json_files('mentors')
-    with open("_site/index.html", "w") as fh:
-        fh.write("<h1>OSDC 2023.01 Public</h1>\n")
-        fh.write("<h2>Mentors</h2>\n")
-        fh.write("<ul>\n")
-        for mentor in mentors:
-            fh.write(f"<li>{mentor['name']}<br>\n")
-            fh.write(f'''GitHub: <a href="https://github.com/{mentor['github']}">{mentor['github']}</a><br>\n''')
-            fh.write(f"</li>\n")
-        fh.write("</ul>\n")
+    participants = read_json_files('participants')
+
+    template = 'index.html'
+    templates_dir = pathlib.Path(__file__).parent.joinpath('templates')
+    env = Environment(loader=FileSystemLoader(templates_dir), autoescape=True)
+    html_template = env.get_template(template)
+    html_content = html_template.render(
+        mentors = mentors,
+        participants = participants,
+    )
+    with open('_site/index.html', 'w') as fh:
+        fh.write(html_content)
+
+
 
 def read_json_files(folder):
     people = []
     for filename in os.listdir(folder):
         if filename == '.gitkeep':
             continue
-        #print(filename)
+        if not filename.endswith('.json'):
+           raise JsonError("file does not end with .json")
+        if filename != filename.lower():
+            raise Exception(f"filename {filename} should be all lower-case")
         with open(os.path.join(folder, filename)) as fh:
             person = json.load(fh)
         people.append(person)
@@ -31,3 +40,6 @@ def read_json_files(folder):
 
 if __name__ == "__main__":
     main()
+
+class JsonError(Exception):
+    pass
