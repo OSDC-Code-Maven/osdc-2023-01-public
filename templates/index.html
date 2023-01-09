@@ -11,23 +11,7 @@
 <h2>Participants</h2>
 <ul>
 {% for person in participants %}
-    <li>{{ person['name'] }}<br>
-    GitHub: <a href="https://github.com/{{ person['github'] }}">{{ person['github'] }}</a><br>
-    {% if person['gitlab'] %}
-        GitLab: <a href="https://gitlab.com/{{ person['gitlab'] }}">{{ person['gitlab'] }}</a><br>
-    {% endif %}
-    {% if person['linkedin'] %}
-        LinkedIn <a href="https://linkedin.com/in/{{ person['linkedin'] }}">{{ person['name'] }}</a><br>
-    {% endif %}
-
-    {% if person['posts'] %}
-        <ul>
-        {% for post in person['posts'] %}
-            <li><a href="{{post['url']}}">post</a></li>
-        {% endfor %}
-        </ul>
-    {% endif %}
-    </li>
+    {% include 'person.html' %}
 {% endfor %}
 </ul>
 
