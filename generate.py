@@ -1,7 +1,10 @@
 import json
 import os
+<<<<<<< HEAD
 import pathlib
 from jinja2 import Environment, FileSystemLoader
+=======
+>>>>>>> 8c2635361e04be06ed4a00913080c2abc4c043cf
 import requests
 
 
