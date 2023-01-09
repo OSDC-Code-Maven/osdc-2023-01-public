@@ -1,15 +1,18 @@
-<h1>OSDC 2023.01 Public</h1>
-<h2>Mentors</h2>
-<ul>
+{% include 'header.html' %}
+
+<h1 class="title">OSDC 2023.01 Public</h1>
+<h2 class="title">Mentors</h2>
 {% for person in mentors %}
+   <div class="box person">
     {% include 'person.html' %}
+   </div>
 {% endfor %}
-</ul>
 
-<h2>Participants</h2>
-<ul>
+<h2 class="title">Participants</h2>
 {% for person in participants %}
+   <div class="box person">
     {% include 'person.html' %}
+   </div>
 {% endfor %}
-</ul>
 
+{% include 'footer.html' %}

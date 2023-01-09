@@ -1,4 +1,4 @@
-    <li>{{ person['name'] }}<br>
+    {{ person['name'] }}<br>
     GitHub: <a href="https://github.com/{{ person['github'] }}">{{ person['github'] }}</a><br>
     {% if person['gitlab'] %}
         GitLab: <a href="https://gitlab.com/{{ person['gitlab'] }}">{{ person['gitlab'] }}</a><br>
@@ -14,5 +14,4 @@
         {% endfor %}
         </ul>
     {% endif %}
-    </li>
 
