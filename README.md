@@ -77,6 +77,9 @@ https://code-maven.github.io/osdc-2023-01-public/
 
 ## Session 2
 
+* Show the drawing of the GitHub PR process in the cloud we have used in the previous session.
+
+
 Some items that were left out from the first session so we'll have to add them to the next session.
 
 * Show blogging platform
