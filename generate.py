@@ -39,10 +39,8 @@ def read_json_files(folder):
         people.append(person)
     return people
 
-def check_url_for_participant(url: str) -> bool:
-    # params: URL of the participant for github / linkedin.
-    # Linkedin does not allow to get requests from their website:
-    # https://stackoverflow.com/questions/18704429/python-requests-library-added-an-additional-header-accept-encoding-identity
+def check_github_acc_for_participant(url: str) -> bool:
+    # params: URL of the participant for github.
     headers = {'Accept-Encoding': 'gzip, deflate'}
     r = requests.head(url, headers=headers)
     return r.status_code == requests.codes.ok
