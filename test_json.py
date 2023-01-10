@@ -18,11 +18,9 @@ def test_json():
                 assert person[field] != "", f"field '{field}' in file '{person['github']}.json' is empty"
                 for field in ['linkedin', 'github', 'gitlab', 'devto']:
                     if field in person:
-                        if person['github'] == 'anatlavitzkovitz' and field == 'gitlab':
-                            continue
                         if person['github'] == 'ilayni' and field == 'linkedin':
                             continue
-                        match = re.search(r'^[a-zA-Z0-9-]+$', person[field])
+                        match = re.search(r'^[a-zA-Z0-9-\.]+$', person[field])
                         assert match, f"Invalid format for '{field}'='{person[field]}' in file '{person['github']}.json'"
 
             assert 'name' in person
@@ -35,7 +33,5 @@ def test_urls():
         for person in people:
             assert check_github_acc_for_participant(GITHUB_URL + person['github']), f"Checking {GITHUB_URL + person['github']}"
             if 'gitlab' in person:
-                if person['github'] == 'anatlavitzkovitz':
-                    continue
                 assert check_github_acc_for_participant(GITLAB_URL + person['gitlab']), f"Checking {GITLAB_URL + person['gitlab']} for '{person['github']}.json'"
 
