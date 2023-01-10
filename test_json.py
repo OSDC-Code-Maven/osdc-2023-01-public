@@ -2,6 +2,7 @@ from generate import read_json_files
 from generate import check_github_acc_for_participant
 
 GITHUB_URL: str = "https://github.com/"
+GITLAB_URL: str = "https://gitlab.com/"
 
 def test_json():
     for folder in ['mentors', 'participants']:
@@ -12,4 +13,7 @@ def test_json():
             assert 'name' in person
             assert 'github' in person
             assert check_github_acc_for_participant(GITHUB_URL + person['github']), f"Checking {GITHUB_URL + person['github']}"
+            if 'gitlab' in person:
+                if person['github'] not in ['anatlavitzkovitz']:
+                    assert check_github_acc_for_participant(GITLAB_URL + person['gitlab']), f"Checking {GITLAB_URL + person['gitlab']} for '{person['github']}.json'"
 
