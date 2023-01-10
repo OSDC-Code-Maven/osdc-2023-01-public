@@ -2,6 +2,7 @@ import json
 import os
 import pathlib
 from jinja2 import Environment, FileSystemLoader
+import requests
 
 def read_course_json():
     with pathlib.Path(__file__).parent.joinpath('course.json').open() as fh:
@@ -44,6 +45,12 @@ def read_json_files(folder):
             person = json.load(fh)
         people.append(person)
     return people
+
+def check_github_acc_for_participant(url: str) -> bool:
+    # params: URL of the participant for github.
+    headers = {'Accept-Encoding': 'gzip, deflate'}
+    r = requests.head(url, headers=headers)
+    return r.status_code == requests.codes.ok
 
 if __name__ == "__main__":
     main()
