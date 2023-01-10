@@ -43,6 +43,13 @@ def read_json_files(folder):
             raise Exception(f"filename {filename} should be all lower-case")
         with open(os.path.join(folder, filename)) as fh:
             person = json.load(fh)
+
+        if 'github' not in person:
+            raise Exception(f"github field is missing from {filename}")
+        if person['github'].lower() != filename[:-5]:
+            raise Exception(f"value of github fields '{person['github']}' is not the same as the filename '{filename}'")
+
+
         people.append(person)
     return people
 
