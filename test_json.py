@@ -9,4 +9,5 @@ def test_json():
         for person in people:
             assert 'name' in person
             assert 'github' in person
-            assert check_github_acc_for_participant(GITHUB_URL + person['github']) == True
+            assert check_github_acc_for_participant(GITHUB_URL + person['github']), f"Checking {GITHUB_URL + person['github']}"
+
