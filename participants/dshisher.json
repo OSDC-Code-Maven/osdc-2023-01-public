@@ -4,5 +4,7 @@
     "linkedin": "sahar-kruk-4952b2135",
     "github": "Dshisher",
     "devto": "Dshisher", 
-    "posts": {"url": [https://dev.to/dshisher/introduction-post-3eck]}
+    "posts": [
+        {"url": "https://dev.to/dshisher/introduction-post-3eck"}
+         ]
 }
