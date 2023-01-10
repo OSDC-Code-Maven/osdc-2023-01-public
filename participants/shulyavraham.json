@@ -3,5 +3,7 @@
     "linkedin": "ShulyAvraham",
     "github": "ShulyAvraham",
     "gitlab": "ShulyAvraham",
-    "posts": []
+    "posts": [
+        {"url": "https://dev.to/shulyavraham/osdc-course-with-gabor-4hfi"}
+    ]
 }
