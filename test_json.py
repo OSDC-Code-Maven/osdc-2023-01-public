@@ -13,6 +13,7 @@ def test_json():
             for field in person.keys():
                 assert field == field.lower()
                 assert field in VALID_FIELDS
+                assert person[field] != "", f"field '{field}' in file '{person['github']}.json' is empty"
 
             assert 'name' in person
 
