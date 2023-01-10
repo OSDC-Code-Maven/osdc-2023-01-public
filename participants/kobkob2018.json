@@ -1,5 +1,8 @@
 {
     "name": "Yacov Avraham",
     "linkedin": "kobi-avraham-0985211a",
-    "github": "kobkob2018"
+    "github": "kobkob2018",
+    "posts": [
+        {"url": "https://kobkob.hashnode.dev/i-am-writing-my-first-blogpost"},
+    ]
 }
