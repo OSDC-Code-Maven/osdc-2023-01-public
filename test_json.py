@@ -4,7 +4,7 @@ from generate import check_github_acc_for_participant
 GITHUB_URL: str = "https://github.com/"
 
 def test_json():
-    for folder in ['participants', 'mentors']:
+    for folder in ['mentors', 'participants']:
         people = read_json_files(folder)
         for person in people:
             assert 'name' in person
