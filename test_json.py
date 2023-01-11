@@ -22,6 +22,10 @@ def test_json():
                             continue
                         match = re.search(r'^[a-zA-Z0-9-.]+$', person[field])
                         assert match, f"Invalid format for '{field}'='{person[field]}' in file '{person['github']}.json'"
+            if 'posts' in person:
+                assert person['posts'].__class__.__name__ == 'list'
+                for post in person['posts']:
+                    assert sorted(post.keys()) == ['url']
 
             assert 'name' in person
 
