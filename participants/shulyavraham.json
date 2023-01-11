@@ -4,7 +4,11 @@
     "github": "ShulyAvraham",
     "gitlab": "ShulyAvraham",
     "posts": [
-        {"url": "https://dev.to/shulyavraham/osdc-course-with-gabor-4hfi"},
-        {"url": "https://dev.to/shulyavraham/github-insights-from-osdc-szabgab-63o"}
+        {
+            "title": "OSDC Course with Gabor @szabgab",
+            "url": "https://dev.to/shulyavraham/osdc-course-with-gabor-4hfi"},
+        {
+            "title": "GitHub insights from OSDC @szabgab",
+            "url": "https://dev.to/shulyavraham/github-insights-from-osdc-szabgab-63o"}
     ]
 }

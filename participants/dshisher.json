@@ -5,6 +5,8 @@
     "github": "Dshisher",
     "devto": "Dshisher", 
     "posts": [
-        {"url": "https://dev.to/dshisher/introduction-post-3eck"}
+        {
+            "title": "Introduction post",
+            "url": "https://dev.to/dshisher/introduction-post-3eck"}
          ]
 }
