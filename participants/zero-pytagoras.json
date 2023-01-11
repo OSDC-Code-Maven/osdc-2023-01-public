@@ -5,7 +5,8 @@
     "gitlab": "silent-mobius",
     "posts" : [
                 {
-                        "The Beginning" : "https://dev.to/silent_mobius/thus-the-new-journey-begins-18kp"
+                        "title" :"The Beginning" 
+                        "url"   : "https://dev.to/silent_mobius/thus-the-new-journey-begins-18kp"
         }
     ]
 }
