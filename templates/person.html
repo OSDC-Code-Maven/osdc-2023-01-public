@@ -10,7 +10,7 @@
     {% if person['posts'] %}
         <ul>
         {% for post in person['posts'] %}
-            <li><a href="{{post['url']}}">post</a></li>
+            <li><a href="{{post['url']}}">{{post['title']}}</a></li>
         {% endfor %}
         </ul>
     {% endif %}
