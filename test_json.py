@@ -25,7 +25,7 @@ def test_json():
             if 'posts' in person:
                 assert person['posts'].__class__.__name__ == 'list'
                 for post in person['posts']:
-                    assert sorted(post.keys()) == ['url']
+                    assert sorted(post.keys()) == ['title', 'url']
 
             assert 'name' in person
 
