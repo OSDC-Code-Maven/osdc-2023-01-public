@@ -3,7 +3,9 @@
     "linkedin": "alex-schapelle",
     "github": "zero-pytagoras",
     "gitlab": "silent-mobius",
-    "posts" : {
-        "The Beginning" : "https://dev.to/silent_mobius/thus-the-new-journey-begins-18kp",
-    }
+    "posts" : [
+                {
+                        "The Beginning" : "https://dev.to/silent_mobius/thus-the-new-journey-begins-18kp"
+        }
+    ]
 }
