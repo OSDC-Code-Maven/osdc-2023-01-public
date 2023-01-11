@@ -77,6 +77,8 @@ https://code-maven.github.io/osdc-2023-01-public/
 
 ## Session 2
 
+* Why is contributing to Open Source important?
+* Why is blogging about your process is important? (improves skills, helps clarify thoughts, explaining things to others always helps)
 * Show the drawing of the GitHub PR process in the cloud we have used in the previous session.
 
 
