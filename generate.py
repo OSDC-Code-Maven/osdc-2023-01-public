@@ -19,6 +19,15 @@ def update_devto_posts(people):
             page['details'] = forem.fetch(page['url'])
             time.sleep(0.2) # self imposed rate limit
 
+def render(template, filename, **args):
+    templates_dir = pathlib.Path(__file__).parent.joinpath('templates')
+    env = Environment(loader=FileSystemLoader(templates_dir), autoescape=True)
+    html_template = env.get_template(template)
+    html_content = html_template.render(**args)
+    with open(f'_site/{filename}', 'w') as fh:
+        fh.write(html_content)
+
+
 def main():
     if not os.path.exists("_site"):
         os.makedirs("_site")
@@ -34,18 +43,12 @@ def main():
         if 'posts' in person:
             posts.extend(person['posts'])
 
-    template = 'index.html'
-    templates_dir = pathlib.Path(__file__).parent.joinpath('templates')
-    env = Environment(loader=FileSystemLoader(templates_dir), autoescape=True)
-    html_template = env.get_template(template)
-    html_content = html_template.render(
+    render('index.html', 'index.html',
         mentors = mentors,
         participants = participants,
         course = course,
         title = course['title'],
     )
-    with open('_site/index.html', 'w') as fh:
-        fh.write(html_content)
 
 
 
