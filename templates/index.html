@@ -21,7 +21,7 @@ Number of participants: {{ participants | count }}
 
 {% for person in participants %}
    <div class="box person">
-    <a href="/p/{{person.github.lower()}}">{{person.name}}</a>
+    <a href="p/{{person.github.lower()}}">{{person.name}}</a>
    </div>
 {% endfor %}
 
