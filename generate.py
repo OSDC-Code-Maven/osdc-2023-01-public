@@ -30,8 +30,8 @@ def render(template, filename, **args):
 
 
 def main():
-    if not os.path.exists("_site"):
-        os.makedirs("_site")
+    os.makedirs("_site", exist_ok=True)
+    os.makedirs("_site/p", exist_ok=True)
 
     mentors = read_json_files('mentors')
     participants = read_json_files('participants')
@@ -54,6 +54,11 @@ def main():
                         'author': person['name'],
                         'published_at': post['published_at'],
                     })
+        render('person.html', f'p/{person["github"].lower()}.html',
+            title = person['name'],
+            person = person,
+        )
+
     posts.sort(key=lambda post: post['published_at'], reverse=True)
 
     render('index.html', 'index.html',
@@ -66,6 +71,7 @@ def main():
         articles = posts,
         title = 'Articles',
     )
+
 
 
 def read_json_files(folder):
