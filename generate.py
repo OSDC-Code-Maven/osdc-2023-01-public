@@ -3,11 +3,21 @@ import os
 import pathlib
 from jinja2 import Environment, FileSystemLoader
 import requests
+import forem
+import time
 
 def read_course_json():
     with pathlib.Path(__file__).parent.joinpath('course.json').open() as fh:
         return json.load(fh)
 
+def update_devto_posts(people):
+    for person in people:
+        if 'posts' not in person:
+            continue
+        for page in person['posts']:
+            #print(page['url'])
+            page['details'] = forem.fetch(page['url'])
+            time.sleep(0.2) # self imposed rate limit
 
 def main():
     if not os.path.exists("_site"):
@@ -16,6 +26,13 @@ def main():
     mentors = read_json_files('mentors')
     participants = read_json_files('participants')
     course = read_course_json()
+    update_devto_posts(mentors)
+    update_devto_posts(participants)
+
+    posts = []
+    for person in mentors + participants:
+        if 'posts' in person:
+            posts.extend(person['posts'])
 
     template = 'index.html'
     templates_dir = pathlib.Path(__file__).parent.joinpath('templates')
