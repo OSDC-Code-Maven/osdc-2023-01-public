@@ -4,6 +4,7 @@ from generate import read_json_files
 
 
 VALID_FIELDS = ['name', 'linkedin', 'github', 'gitlab', 'devto', 'posts']
+REQURED_FIELD = ['name', 'github']
 
 def test_json():
     for folder in ['mentors', 'participants']:
@@ -24,7 +25,6 @@ def test_json():
                 for post in person['posts']:
                     assert sorted(post.keys()) == ['title', 'url']
 
-            assert 'name' in person
-
-            assert 'github' in person
+            for field in REQURED_FIELD:
+                assert field in person
 
