@@ -5,6 +5,7 @@ from jinja2 import Environment, FileSystemLoader
 import requests
 import forem
 import time
+import datetime
 
 def read_course_json():
     with pathlib.Path(__file__).parent.joinpath('course.json').open() as fh:
@@ -41,7 +42,19 @@ def main():
     posts = []
     for person in mentors + participants:
         if 'posts' in person:
-            posts.extend(person['posts'])
+            for post in person['posts']:
+                if post['details']:
+                    post['details']['author'] = person['name']
+                    posts.append(post['details'])
+                else:
+                    posts.append({
+                        'url': post['url'],
+                        'title': post['title'],
+                        'description': '',
+                        'author': person['name'],
+                        'published_at': str(datetime.datetime.now()),
+                    })
+    posts.sort(key=lambda post: post['published_at'], reverse=True)
 
     render('index.html', 'index.html',
         mentors = mentors,
@@ -49,7 +62,10 @@ def main():
         course = course,
         title = course['title'],
     )
-
+    render('articles.html', 'articles.html',
+        articles = posts,
+        title = 'Articles',
+    )
 
 
 def read_json_files(folder):
