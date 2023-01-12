@@ -74,20 +74,30 @@ https://code-maven.github.io/osdc-2023-01-public/
 
 * There are 3 GitHub repositories with lists of GitHub organization published by [higher education institutions](https://github.com/szabgab/open-source-by-higher-education), [governments](https://github.com/szabgab/open-source-by-government), and [corporations](https://github.com/szabgab/open-source-by-corporations). Find at least 5 more organizations that share some of their code using an open source license in GitHub or GitLab. An organization can be a corporation, a university, a college, a research institute, or a government. (e.g. find a list of universities and use the search feature of GitHub to find **organizations** that belong to the institute).
 
+### Comments
+
+* The first sessions should be longer. Maybe two parts of 45 minutes and I should cover a number of topics that were now postponed to the 2nd session
 
 ## Session 2
 
 * Why is contributing to Open Source important?
-* Why is blogging about your process is important? (improves skills, helps clarify thoughts, explaining things to others always helps)
+    * You received a gift, you give a gift.
+    * Your code will be checked by others as well.
+    * You get credit in the open source world and you can also show to your (future) employers.
+    * These days we like it or not our "brand" has value.
+    * You get a better product next time you use it (at the same organization or elsewhere).
+    * You will be able to easily upgrade to the new version of this project.
+* Why blogging about your process is important?
+    * improves skills
+    * helps clarify thoughts
+    * explaining things to others always helps
+    * you will be able to look back
+    * Build your personal "brand".
 * Show the drawing of the GitHub PR process in the cloud we have used in the previous session.
-
-
-Some items that were left out from the first session so we'll have to add them to the next session.
 
 * Show blogging platform
     * [DEV](https://dev.to/) - See [my account](https://dev.to/szabgab/)
     * [Hashnode](https://hashnode.com/) - See [my side](https://hash.code-maven.com/)
-
 
 * Version Control
     * Show the repo of [Flask](https://github.com/pallets/flask):
@@ -108,5 +118,29 @@ Some items that were left out from the first session so we'll have to add them t
     * Bold
 
 * Show [Slack](https://code-maven.slack.com/)
+
+* Show how to create GitHub pages for the user `username.github.io` first using only the GitHub web site.
+    * Show URL that does http://cm-demo.github.io/
+    * Create repository with README file https://github.com/cm-demo/cm-demo.github.io
+    * Create docs/index.md  with Hello World
+    * Configure Pages to be served from the docs/ folder
+    * See the URL now shows the new page.
+* [GitHub flavored Markdown](https://github.github.com/gfm/) that can be used in Markdown files and elsewhere on GitHub.
+* Then show how to use Git on the command line to update the GitHub pages [git slides](https://code-maven.com/slides/git/)
+* Git - use the following commands:
+
+```
+git config --global --add user.name "Foo Bar"
+git config --global --add user.email foo@bar.com
+git clone
+
+git status
+git diff
+git add
+git commit
+git show SHA
+git push
+git remote -v
+```
 
 
