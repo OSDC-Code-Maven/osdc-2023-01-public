@@ -11,7 +11,7 @@ Start date: {{course.start_date}}
 <h2 class="title">Mentors</h2>
 {% for person in mentors %}
    <div class="box person">
-    <a href="/p/{{person.github.lower()}}">{{person.name}}</a>
+    <a href="p/{{person.github.lower()}}">{{person.name}}</a>
    </div>
 {% endfor %}
 
