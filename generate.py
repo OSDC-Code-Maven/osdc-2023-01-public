@@ -54,6 +54,7 @@ def read_json_files(folder):
     return people
 
 def check_github_acc_for_participant(url: str) -> bool:
+    print(url)
     # params: URL of the participant for github.
     headers = {'Accept-Encoding': 'gzip, deflate'}
     r = requests.head(url, headers=headers)
