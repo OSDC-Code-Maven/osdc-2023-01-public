@@ -61,6 +61,8 @@ def main():
 
     posts.sort(key=lambda post: post['published_at'], reverse=True)
 
+    participants.sort(key=lambda person: person['name'])
+
     render('index.html', 'index.html',
         mentors = mentors,
         participants = participants,
