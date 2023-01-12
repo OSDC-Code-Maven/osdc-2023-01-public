@@ -7,14 +7,6 @@ Start date: {{course.start_date}}
   End date: {{course.end_date}}
 {% endif %}
 
-
-<h2 class="title">Mentors</h2>
-{% for person in mentors %}
-   <div class="box person">
-    <a href="p/{{person.github.lower()}}">{{person.name}}</a>
-   </div>
-{% endfor %}
-
 <h2 class="title">Participants</h2>
 
 Number of participants: {{ participants | count }}
@@ -24,5 +16,13 @@ Number of participants: {{ participants | count }}
     <a href="p/{{person.github.lower()}}">{{person.name}}</a>
    </div>
 {% endfor %}
+
+<h2 class="title">Mentors</h2>
+{% for person in mentors %}
+   <div class="box person">
+    <a href="p/{{person.github.lower()}}">{{person.name}}</a>
+   </div>
+{% endfor %}
+
 
 {% include 'footer.html' %}
