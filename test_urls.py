@@ -13,3 +13,7 @@ def test_urls():
             if 'gitlab' in person:
                 assert check_github_acc_for_participant(GITLAB_URL + person['gitlab']), f"Checking {GITLAB_URL + person['gitlab']} for '{person['github']}.json'"
 
+            if 'posts' in person:
+                for post in person['posts']:
+                    assert check_github_acc_for_participant(post['url']), f"Checking {post['url']} for '{person['github']}.json'"
+
