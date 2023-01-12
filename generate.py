@@ -5,7 +5,7 @@ from jinja2 import Environment, FileSystemLoader
 import requests
 import forem
 import time
-import datetime
+#import datetime
 
 def read_course_json():
     with pathlib.Path(__file__).parent.joinpath('course.json').open() as fh:
@@ -52,7 +52,7 @@ def main():
                         'title': post['title'],
                         'description': '',
                         'author': person['name'],
-                        'published_at': str(datetime.datetime.now()),
+                        'published_at': post['published_at'],
                     })
     posts.sort(key=lambda post: post['published_at'], reverse=True)
 

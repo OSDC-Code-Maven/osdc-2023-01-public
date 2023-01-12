@@ -23,7 +23,10 @@ def test_json():
             if 'posts' in person:
                 assert person['posts'].__class__.__name__ == 'list'
                 for post in person['posts']:
-                    assert sorted(post.keys()) == ['title', 'url']
+                    if post['url'].startswith('https://dev.to/'):
+                        assert sorted(post.keys()) == ['title', 'url']
+                    else:
+                        assert sorted(post.keys()) == ['published_at', 'title', 'url']
 
             for field in REQURED_FIELD:
                 assert field in person
