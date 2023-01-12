@@ -72,7 +72,7 @@ https://code-maven.github.io/osdc-2023-01-public/
     * Which open source projects would you like to contribute to.
 * Update your Pull-request adding the URL to the blog post to the `posts` field in the json file.
 
-* There are 3 GitHub repositories with lists of GitHub organization published by [higher education institutions](https://github.com/szabgab/open-source-by-higher-education), [governments](https://github.com/szabgab/open-source-by-government), and [corporations](https://github.com/szabgab/open-source-by-corporations). Find at leas 5 more repositories that we can add to either one of those lists. (e.g. find a list of universities and use the search feature of GitHub to find **organizations** that belong to the institute).
+* There are 3 GitHub repositories with lists of GitHub organization published by [higher education institutions](https://github.com/szabgab/open-source-by-higher-education), [governments](https://github.com/szabgab/open-source-by-government), and [corporations](https://github.com/szabgab/open-source-by-corporations). Find at least 5 more organizations that share some of their code using an open source license in GitHub or GitLab. An organization can be a corporation, a university, a college, a research institute, or a government. (e.g. find a list of universities and use the search feature of GitHub to find **organizations** that belong to the institute).
 
 
 ## Session 2
