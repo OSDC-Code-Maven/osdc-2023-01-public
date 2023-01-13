@@ -16,8 +16,6 @@ def test_json():
                 assert person[field] != "", f"field '{field}' in file '{person['github']}.json' is empty"
                 for field in ['linkedin', 'github', 'gitlab', 'devto']:
                     if field in person:
-                        if person['github'] == 'ilayni' and field == 'linkedin':
-                            continue
                         match = re.search(r'^[a-zA-Z0-9-.]+$', person[field])
                         assert match, f"Invalid format for '{field}'='{person[field]}' in file '{person['github']}.json'"
             if 'posts' in person:
