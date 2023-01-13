@@ -4,6 +4,7 @@ import pathlib
 from jinja2 import Environment, FileSystemLoader
 import requests
 import forem
+import github
 import time
 #import datetime
 
@@ -19,6 +20,11 @@ def update_devto_posts(people):
             #print(page['url'])
             page['details'] = forem.fetch(page['url'])
             time.sleep(0.2) # self imposed rate limit
+
+def update_github_data(people):
+    for person in people:
+        person['gh'] = github.get_user_info(person['github'])
+        time.sleep(0.2) # self imposed rate limit
 
 def render(template, filename, **args):
     templates_dir = pathlib.Path(__file__).parent.joinpath('templates')
@@ -46,6 +52,8 @@ def main():
 
     update_devto_posts(mentors)
     update_devto_posts(participants)
+    update_github_data(mentors)
+    update_github_data(participants)
 
     posts = []
     for person in mentors + participants:
