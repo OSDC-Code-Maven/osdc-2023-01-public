@@ -80,6 +80,12 @@ https://code-maven.github.io/osdc-2023-01-public/
 
 ## Session 2
 
+* Show the results so far.
+    * Our web site
+    * Some of the blog posts
+
+* Remind everyone to check the results of the CI and if they don't understand the meaning ask it on the Slack channel.
+
 * Why is contributing to Open Source important?
     * You received a gift, you give a gift.
     * Your code will be checked by others as well.
