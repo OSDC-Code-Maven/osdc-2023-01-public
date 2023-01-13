@@ -25,17 +25,25 @@ def render(template, filename, **args):
     env = Environment(loader=FileSystemLoader(templates_dir), autoescape=True)
     html_template = env.get_template(template)
     html_content = html_template.render(**args)
-    with open(f'_site/{filename}', 'w') as fh:
+    with open(filename, 'w') as fh:
         fh.write(html_content)
 
 
 def main():
-    os.makedirs("_site", exist_ok=True)
-    os.makedirs("_site/p", exist_ok=True)
-
     mentors = read_json_files('mentors')
     participants = read_json_files('participants')
     course = read_course_json()
+
+    prod = os.environ.get('GITHUB_ACTIONS')
+    outdir = "_site"
+    if not prod:
+        outdir = os.path.join(outdir, course['id'])
+    os.makedirs(outdir, exist_ok=True)
+    os.makedirs(os.path.join(outdir, "p"), exist_ok=True)
+    if not prod:
+        with open(os.path.join('_site', 'index.html'), 'w') as fh:
+            fh.write(f'<a href="{course["id"]}/">{course["id"]}</a>')
+
     update_devto_posts(mentors)
     update_devto_posts(participants)
 
@@ -54,23 +62,31 @@ def main():
                         'author': person['name'],
                         'published_at': post['published_at'],
                     })
-        render('person.html', f'p/{person["github"].lower()}.html',
-            title = person['name'],
-            person = person,
-        )
-
     posts.sort(key=lambda post: post['published_at'], reverse=True)
 
     participants.sort(key=lambda person: person['name'])
 
-    render('index.html', 'index.html',
+
+    for person in mentors + participants:
+        render('person.html', os.path.join(outdir, 'p', f'{person["github"].lower()}.html'),
+            title = person['name'],
+            mentors = mentors,
+            participants = participants,
+            course = course,
+            person = person,
+        )
+
+    render('index.html', os.path.join(outdir, 'index.html'),
         mentors = mentors,
         participants = participants,
         course = course,
         title = course['title'],
     )
-    render('articles.html', 'articles.html',
+    render('articles.html', os.path.join(outdir, 'articles.html'),
+        mentors = mentors,
+        participants = participants,
         articles = posts,
+        course = course,
         title = 'Articles',
     )
 
