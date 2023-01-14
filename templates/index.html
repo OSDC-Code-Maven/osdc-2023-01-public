@@ -1,27 +1,28 @@
-<h1>OSDC 2023.01 Public</h1>
-<h2>Mentors</h2>
-<ul>
-{% for person in mentors %}
-    <li>{{ person['name'] }}<br>
-    GitHub: <a href="https://github.com/{{ person['github'] }}">{{ person['github'] }}</a><br>
-    </li>
-{% endfor %}
-</ul>
+{% include 'header.html' %}
 
-<h2>Participants</h2>
-<ul>
+<h1 class="title">{{title}}</h1>
+
+Start date: {{course.start_date}}
+{% if course.end_date %}
+  End date: {{course.end_date}}
+{% endif %}
+
+<h2 class="title">Participants</h2>
+
+Number of participants: {{ participants | count }}
+
 {% for person in participants %}
-    <li>{{ person['name'] }}<br>
-    GitHub: <a href="https://github.com/{{ person['github'] }}">{{ person['github'] }}</a><br>
-
-    {% if person['posts'] %}
-        <ul>
-        {% for post in person['posts'] %}
-            <li><a href="{{post['url']}}">post</a></li>
-        {% endfor %}
-        </ul>
-    {% endif %}
-    </li>
+   <div class="box person">
+    <a href="p/{{person.github.lower()}}"><img width="60px" src="{{person.gh.avatar_url}}"> {{person.name}}</a>
+   </div>
 {% endfor %}
-</ul>
 
+<h2 class="title">Mentors</h2>
+{% for person in mentors %}
+   <div class="box person">
+    <a href="p/{{person.github.lower()}}"><img width="60px" src="{{person.gh.avatar_url}}"> {{person.name}}</a>
+   </div>
+{% endfor %}
+
+
+{% include 'footer.html' %}

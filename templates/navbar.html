@@ -1,0 +1,46 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+     Code Maven
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/{{course.id}}/">
+        Home
+      </a>
+
+      <a class="navbar-item" href="/{{course.id}}/articles">
+        Articles
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Participants
+        </a>
+
+        <div class="navbar-dropdown">
+          {% for person in participants %}
+          <a class="navbar-item" href="/{{course.id}}/p/{{ person.github.lower() }}">
+            {{ person.name }}
+          </a>
+          {% endfor %}
+          <hr class="navbar-divider">
+          {% for person in mentors %}
+          <a class="navbar-item" href="/{{course.id}}/p/{{ person.github.lower() }}">
+            {{ person.name }}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+

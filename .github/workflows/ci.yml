@@ -35,8 +35,13 @@ jobs:
         pip install -r requirements.txt
         pip install pytest
 
-    - name: Test with pytest
-      run: pytest
+    - name: Test json files pytest
+      run: |
+        pytest -svx test_json.py
+
+    - name: Test urls pytest
+      run: |
+        pytest -svx test_urls.py
 
   generate:
     runs-on: ubuntu-latest
