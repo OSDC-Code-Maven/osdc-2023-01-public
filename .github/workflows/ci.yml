@@ -18,7 +18,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  CACHE_NUMBER: 1 # increase this by one to force new cache
+  CACHE_NUMBER: 2 # increase this by one to force new cache
 
 jobs:
   test:
