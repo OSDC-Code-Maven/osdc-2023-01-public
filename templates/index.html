@@ -13,14 +13,14 @@ Number of participants: {{ participants | count }}
 
 {% for person in participants %}
    <div class="box person">
-    <a href="p/{{person.github.lower()}}"><img width="60px" src="{{person.gh.avatar_url}}"> {{person.name}}</a>
+    <a href="p/{{person.github.lower()}}"><img width="60px" src="{{person.gh.avatar_url}}" alt="{{person.name}}"> {{person.name}}</a>
    </div>
 {% endfor %}
 
 <h2 class="title">Mentors</h2>
 {% for person in mentors %}
    <div class="box person">
-    <a href="p/{{person.github.lower()}}"><img width="60px" src="{{person.gh.avatar_url}}"> {{person.name}}</a>
+    <a href="p/{{person.github.lower()}}"><img width="60px" src="{{person.gh.avatar_url}}" alt="{{person.name}}"> {{person.name}}</a>
    </div>
 {% endfor %}
 
