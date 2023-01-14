@@ -48,9 +48,14 @@ def update_devto_posts(people):
 
 
 def update_github_data(people):
+    cache = load_cache('github_people')
     for person in people:
-        person['gh'] = github.get_user_info(person['github'])
+        github_id = person['github']
+        if github_id not in cache:
+            cache[github_id] = github.get_user_info(github_id)
+        person['gh'] = cache[github_id]
         time.sleep(0.2) # self imposed rate limit
+    save_cache('github_people', cache)
 
 def render(template, filename, **args):
     templates_dir = pathlib.Path(__file__).parent.joinpath('templates')

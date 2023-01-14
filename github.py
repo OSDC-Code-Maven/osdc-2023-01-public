@@ -4,6 +4,7 @@ from pprint import pprint
 
 
 def get_user_info(username):
+    print(username)
     url = f"https://api.github.com/users/{username}"
     user_data = requests.get(url).json()
     return user_data
