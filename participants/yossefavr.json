@@ -2,5 +2,11 @@
     "name": "Yossef Avraham",
     "linkedin": "yossefavr",
     "github": "yossefavr",
-    "posts": []
+    "posts": 
+    [
+        {
+            "title": "OSDC Course with Gabor @szabgab - First assignment Blog Post",
+            "url": " https://osdc-yossefavr.blogspot.com/2023/01/10012023-this-week-i-have-started-open.html"
+        }   
+    ]
 }
