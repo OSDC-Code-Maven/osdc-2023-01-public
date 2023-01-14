@@ -65,6 +65,24 @@ def check_github_acc_for_participant(url: str) -> bool:
     r = requests.head(url, headers=headers)
     return r.status_code == requests.codes.ok
 
+def collect_posts(people):
+    posts = []
+    for person in people:
+        if 'posts' in person:
+            for post in person['posts']:
+                if post['details']:
+                    post['details']['author'] = person['name']
+                    posts.append(post['details'])
+                else:
+                    posts.append({
+                        'url': post['url'],
+                        'title': post['title'],
+                        'description': '',
+                        'author': person['name'],
+                        'published_at': post['published_at'],
+                    })
+    posts.sort(key=lambda post: post['published_at'], reverse=True)
+    return posts
 
 def main():
     mentors = read_json_files('mentors')
@@ -86,25 +104,9 @@ def main():
     update_github_data(mentors)
     update_github_data(participants)
 
-    posts = []
-    for person in mentors + participants:
-        if 'posts' in person:
-            for post in person['posts']:
-                if post['details']:
-                    post['details']['author'] = person['name']
-                    posts.append(post['details'])
-                else:
-                    posts.append({
-                        'url': post['url'],
-                        'title': post['title'],
-                        'description': '',
-                        'author': person['name'],
-                        'published_at': post['published_at'],
-                    })
-    posts.sort(key=lambda post: post['published_at'], reverse=True)
+    posts = collect_posts(mentors + participants)
 
     participants.sort(key=lambda person: person['name'])
-
 
     for person in mentors + participants:
         render('person.html', os.path.join(outdir, 'p', f'{person["github"].lower()}.html'),
