@@ -3,6 +3,7 @@ import requests
 #import json
 
 def fetch(url):
+    print(url)
     if not url.startswith("https://dev.to/"):
         return
 

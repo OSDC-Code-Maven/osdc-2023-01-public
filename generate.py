@@ -8,22 +8,33 @@ import github
 import time
 #import datetime
 
+CACHE_PATH = 'cache'
+os.makedirs(CACHE_PATH, exist_ok=True)
+
 class JsonError(Exception):
     pass
-
 
 def read_course_json():
     with pathlib.Path(__file__).parent.joinpath('course.json').open() as fh:
         return json.load(fh)
 
 def update_devto_posts(people):
+    path = os.path.join(CACHE_PATH, 'forem.json')
+    cache = {}
+    if os.path.exists(path):
+        with open(path) as fh:
+            cache = json.load(fh)
     for person in people:
         if 'posts' not in person:
             continue
         for page in person['posts']:
-            #print(page['url'])
-            page['details'] = forem.fetch(page['url'])
+            url = page['url']
+            if url not in cache:
+                cache[url] = forem.fetch(url)
+            page['details'] = cache[url]
             time.sleep(0.2) # self imposed rate limit
+    with open(path, 'w') as fh:
+        json.dump(cache, fh)
 
 def update_github_data(people):
     for person in people:
@@ -37,8 +48,6 @@ def render(template, filename, **args):
     html_content = html_template.render(**args)
     with open(filename, 'w') as fh:
         fh.write(html_content)
-
-
 
 
 def read_json_files(folder):
