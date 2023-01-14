@@ -41,8 +41,8 @@ def update_devto_posts(people):
             url = page['url']
             if url not in cache:
                 cache[url] = forem.fetch(url)
+                time.sleep(0.2) # self imposed rate limit
             page['details'] = cache[url]
-            time.sleep(0.2) # self imposed rate limit
 
     save_cache('forem', cache)
 
@@ -53,8 +53,8 @@ def update_github_data(people):
         github_id = person['github']
         if github_id not in cache:
             cache[github_id] = github.get_user_info(github_id)
+            time.sleep(0.2) # self imposed rate limit
         person['gh'] = cache[github_id]
-        time.sleep(0.2) # self imposed rate limit
     save_cache('github_people', cache)
 
 def render(template, filename, **args):
