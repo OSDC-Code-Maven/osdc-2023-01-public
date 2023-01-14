@@ -1,5 +1,10 @@
 {
     "name": "Ehud Yonasi",
     "linkedin": "ehud-yonasi-5b512a82",
-    "github": "ehudyonasi"
+    "github": "ehudyonasi",
+    "posts": [ {
+        "title": "Starting with Open Source Development Course",
+        "url": "https://ehudyonasi.hashnode.dev/starting-with-open-source-development-course"
+     }      
+    ]
 }
