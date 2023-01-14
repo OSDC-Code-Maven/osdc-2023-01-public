@@ -18,7 +18,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  CACHE: 1 # increase this by one to force new cache
+  CACHE_NUMBER: 1 # increase this by one to force new cache
 
 jobs:
   test:
@@ -28,11 +28,10 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: Cache fetched data
-      id: cache-fetched-data
       uses: actions/cache@v3
       with:
         path: cache
-        key: osdc-${{ env.CACHE }}
+        key: osdc-${{ env.CACHE_NUMBER }}
 
     - name: Setup Python
       uses: actions/setup-python@v4
