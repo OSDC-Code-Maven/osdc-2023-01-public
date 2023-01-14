@@ -18,12 +18,22 @@ def read_course_json():
     with pathlib.Path(__file__).parent.joinpath('course.json').open() as fh:
         return json.load(fh)
 
-def update_devto_posts(people):
-    path = os.path.join(CACHE_PATH, 'forem.json')
+def load_cache(name):
+    path = os.path.join(CACHE_PATH, f'{name}.json')
     cache = {}
     if os.path.exists(path):
         with open(path) as fh:
             cache = json.load(fh)
+    return cache
+
+def save_cache(name, cache):
+    path = os.path.join(CACHE_PATH, f'{name}.json')
+    with open(path, 'w') as fh:
+        json.dump(cache, fh)
+
+def update_devto_posts(people):
+    cache = load_cache('forem')
+
     for person in people:
         if 'posts' not in person:
             continue
@@ -33,8 +43,9 @@ def update_devto_posts(people):
                 cache[url] = forem.fetch(url)
             page['details'] = cache[url]
             time.sleep(0.2) # self imposed rate limit
-    with open(path, 'w') as fh:
-        json.dump(cache, fh)
+
+    save_cache('forem', cache)
+
 
 def update_github_data(people):
     for person in people:
