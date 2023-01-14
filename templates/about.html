@@ -1,0 +1,13 @@
+{% include 'header.html' %}
+
+<h1 class="title">{{title}}</h1>
+
+Start date: {{course.start_date}}<br>
+{% if course.end_date %}
+  End date: {{course.end_date}}<br>
+{% endif %}
+Number of participants: {{ participants | count }}<br>
+Source code in <a href="https://github.com/code-maven/osdc-2023-01-public">GitHub</a><br>
+
+
+{% include 'footer.html' %}

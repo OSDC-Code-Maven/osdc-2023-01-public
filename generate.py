@@ -160,6 +160,13 @@ def main():
         title = 'Articles',
     )
 
+    render('about.html', os.path.join(outdir, 'about.html'),
+        mentors = mentors,
+        participants = participants,
+        course = course,
+        title = 'About',
+    )
+
 
 if __name__ == "__main__":
     main()
