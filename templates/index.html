@@ -12,9 +12,7 @@ Start date: {{course.start_date}}
 Number of participants: {{ participants | count }}
 
 {% for person in participants %}
-   <div class="box person">
-    <a href="p/{{person.github.lower()}}"><img width="60px" src="{{person.gh.avatar_url}}" title="{{person.name}}" alt="{{person.name}}"> {{person.name}}</a>
-   </div>
+    <a href="p/{{person.github.lower()}}"><img width="60px" src="{{person.gh.avatar_url}}" title="{{person.name}}" alt="{{person.name}}"></a>
 {% endfor %}
 
 <h2 class="title">Mentors</h2>
