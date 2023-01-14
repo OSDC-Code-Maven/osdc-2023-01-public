@@ -35,6 +35,37 @@ def render(template, filename, **args):
         fh.write(html_content)
 
 
+
+
+def read_json_files(folder):
+    people = []
+    for filename in os.listdir(folder):
+        if filename == '.gitkeep':
+            continue
+        if not filename.endswith('.json'):
+           raise JsonError("file does not end with .json")
+        if filename != filename.lower():
+            raise Exception(f"filename {filename} should be all lower-case")
+        with open(os.path.join(folder, filename)) as fh:
+            person = json.load(fh)
+
+        if 'github' not in person:
+            raise Exception(f"github field is missing from {filename}")
+        if person['github'].lower() != filename[:-5]:
+            raise Exception(f"value of github fields '{person['github']}' is not the same as the filename '{filename}'")
+
+
+        people.append(person)
+    return people
+
+def check_github_acc_for_participant(url: str) -> bool:
+    print(url)
+    # params: URL of the participant for github.
+    headers = {'Accept-Encoding': 'gzip, deflate'}
+    r = requests.head(url, headers=headers)
+    return r.status_code == requests.codes.ok
+
+
 def main():
     mentors = read_json_files('mentors')
     participants = read_json_files('participants')
@@ -98,35 +129,6 @@ def main():
         title = 'Articles',
     )
 
-
-
-def read_json_files(folder):
-    people = []
-    for filename in os.listdir(folder):
-        if filename == '.gitkeep':
-            continue
-        if not filename.endswith('.json'):
-           raise JsonError("file does not end with .json")
-        if filename != filename.lower():
-            raise Exception(f"filename {filename} should be all lower-case")
-        with open(os.path.join(folder, filename)) as fh:
-            person = json.load(fh)
-
-        if 'github' not in person:
-            raise Exception(f"github field is missing from {filename}")
-        if person['github'].lower() != filename[:-5]:
-            raise Exception(f"value of github fields '{person['github']}' is not the same as the filename '{filename}'")
-
-
-        people.append(person)
-    return people
-
-def check_github_acc_for_participant(url: str) -> bool:
-    print(url)
-    # params: URL of the participant for github.
-    headers = {'Accept-Encoding': 'gzip, deflate'}
-    r = requests.head(url, headers=headers)
-    return r.status_code == requests.codes.ok
 
 if __name__ == "__main__":
     main()
