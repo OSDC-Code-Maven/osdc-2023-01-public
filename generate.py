@@ -8,6 +8,10 @@ import github
 import time
 #import datetime
 
+class JsonError(Exception):
+    pass
+
+
 def read_course_json():
     with pathlib.Path(__file__).parent.joinpath('course.json').open() as fh:
         return json.load(fh)
@@ -135,5 +139,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-class JsonError(Exception):
-    pass
+
