@@ -2,14 +2,13 @@
 
 <h1 class="title">{{title}}</h1>
 
-Start date: {{course.start_date}}
+Start date: {{course.start_date}}<br>
 {% if course.end_date %}
-  End date: {{course.end_date}}
+  End date: {{course.end_date}}<br>
 {% endif %}
+Number of participants: {{ participants | count }}<br>
 
 <h2 class="title">Participants</h2>
-
-Number of participants: {{ participants | count }}
 
 {% for person in participants %}
     <a href="p/{{person.github.lower()}}"><img width="60px" src="{{person.gh.avatar_url}}" title="{{person.name}}" alt="{{person.name}}"></a>
@@ -17,9 +16,7 @@ Number of participants: {{ participants | count }}
 
 <h2 class="title">Mentors</h2>
 {% for person in mentors %}
-   <div class="box person">
-    <a href="p/{{person.github.lower()}}"><img width="60px" src="{{person.gh.avatar_url}}" title="{{person.name}}" alt="{{person.name}}"> {{person.name}}</a>
-   </div>
+    <a href="p/{{person.github.lower()}}"><img width="60px" src="{{person.gh.avatar_url}}" title="{{person.name}}" alt="{{person.name}}"></a>
 {% endfor %}
 
 
