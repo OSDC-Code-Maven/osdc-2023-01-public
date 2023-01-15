@@ -137,6 +137,9 @@ https://github.code-maven.com/osdc-2023-01-public/
     * See the URL now shows the new page.
 * [GitHub flavored Markdown](https://github.github.com/gfm/) that can be used in Markdown files and elsewhere on GitHub.
 
+* [Video part 1](https://youtu.be/m05n94cxdDI)
+* [Video part 2](https://youtu.be/oJfMSgotdxM)
+
 
 ### Assignment 2
 
