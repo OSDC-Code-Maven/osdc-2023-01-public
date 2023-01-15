@@ -102,7 +102,6 @@ https://github.code-maven.com/osdc-2023-01-public/
     * explaining things to others always helps
     * you will be able to look back
     * Build your personal "brand".
-* Show the drawing of the GitHub PR process in the cloud we have used in the previous session.
 
 * Show blogging platform
     * [DEV](https://dev.to/) - See [my account](https://dev.to/szabgab/)
@@ -114,19 +113,17 @@ https://github.code-maven.com/osdc-2023-01-public/
         * diffs
         * show blame of the README file
         * Comment on a commit
-        * Open issue (?)
-
-* [GitLab](https://gitlab.com/): just show that it exists
+        * Open issue: on our  project, on flask there are templates in th
 
 * [HTML - Hyper Text Markup Language](https://en.wikipedia.org/wiki/HTML)
     * just view source in a browser
+
 * [Markdown](https://en.wikipedia.org/wiki/Markdown).
     * Subtitle
     * Bullet points
     * Links
     * Bold
 
-* Show [Slack](https://code-maven.slack.com/)
 
 * Show how to create GitHub pages for the user `username.github.io` first using only the GitHub web site.
     * Show URL that does http://cm-demo.github.io/
@@ -135,6 +132,34 @@ https://github.code-maven.com/osdc-2023-01-public/
     * Configure Pages to be served from the docs/ folder
     * See the URL now shows the new page.
 * [GitHub flavored Markdown](https://github.github.com/gfm/) that can be used in Markdown files and elsewhere on GitHub.
+
+
+### Assignment 2
+
+* Create a web site using GitHub pages with Markdown. At first using the interface on the website of GitHub:
+    * Create your own GitHub repository  `username.github.io`.
+    * Create the `docs` folder and in the `docs` folder create a file called `index.md`.
+    * Add to it the main page of your new personal web-site.
+    * Include links to your GitHub and GitLab repositories.
+    * Include links to your blog and to the course at https://osdc.code-maven.com/ .
+    * Include a picture of you (or if you prefer not to have your picture then a picture you took of something nice.) Describe the source of that picture. Bevare of reusing images you found on the Internet. We don't want you to infringe on the copyright of someone else.
+* Add your CV in Markdown
+    * Create a new file called docs/cv.md
+    * Start writing your CV there.
+* In a blog post describe your experience. Include a link to your new GitHub pages site.
+* Link from your new web GitHub pages based web-site to your blogging account and the article you wrote.
+* Mention all the people from the course whom you know and link to their journal.
+
+* Submit by adding the link of your new blog post to your personal JSON file in the project.
+
+## Session 3
+
+* Show the drawing of the GitHub PR process in the cloud we have used in the previous session.
+
+* Show [Slack](https://code-maven.slack.com/)
+
+* [GitLab](https://gitlab.com/): just show that it exists
+
 * Then show how to use Git on the command line to update the GitHub pages [git slides](https://code-maven.com/slides/git/)
 * Git - use the following commands:
 
@@ -152,22 +177,5 @@ git push
 git remote -v
 ```
 
-### Assignment 2
-
-* Create a web site using GitHub pages with Markdown. At first using the interface on the website of GitHub:
-    * Create your own GitHub repository  `username.github.io`.
-    * Create the `docs` folder and in the `docs` folder create a file called `index.md`.
-    * Add to it the main page of your new personal web-site.
-    * Include links to your GitHub and GitLab repositories.
-    * Include links to your blog and to the course at https://osdc.code-maven.com/ .
-    * Include a picture of you (or if you prefer not to have your picture then a picture you took of something nice.) Describe the source of that picture. Bevare of reusing images you found on the Internet. We don't want you to infringe on the copyright of someone else.
-* Add your CV in Markdown - now do this on your computer after cloning the repository.
-    * Create a new file called docs/cv.md
-    * Start writing your CV there.
-* In a blog post describe your experience. Include a link to your new GitHub pages site.
-* Link from your new web GitHub pages based web-site to your blogging account and the article you wrote.
-* Mention all the people from the course whom you know and link to their journal.
-
-* Submit by adding the link of your new blog post to your personal JSON file in the project.
-
+Do this on your computer after cloning the repository.
 
