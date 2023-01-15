@@ -50,7 +50,7 @@ https://github.code-maven.com/osdc-2023-01-public/
 * After the video recording also mentioned https://kantoniko.com/
 * [issues](https://github.com/kantoniko/ladino-diksionaryo-code/issues)
 
-### Assignment
+### Assignment 1
 
 * You will have to publish a journal of your process. You can use any blogging platform, but let me suggest a few:
     * [DEV](https://dev.to/) - shared blogging platform. See [my account](https://dev.to/szabgab/)
@@ -83,6 +83,8 @@ https://github.code-maven.com/osdc-2023-01-public/
 * Show the results so far.
     * Our web site
     * Some of the blog posts
+    * Missing project links,
+    * Missin PRs for the data collection projects
 
 * Remind everyone to check the results of the CI and if they don't understand the meaning ask it on the Slack channel.
     * If the CI fails, fix it in the same branch. That will update the PR. Do NOT start a new branch.
@@ -149,5 +151,23 @@ git show SHA
 git push
 git remote -v
 ```
+
+### Assignment 2
+
+* Create a web site using GitHub pages with Markdown. At first using the interface on the website of GitHub:
+    * Create your own GitHub repository  `username.github.io`.
+    * Create the `docs` folder and in the `docs` folder create a file called `index.md`.
+    * Add to it the main page of your new personal web-site.
+    * Include links to your GitHub and GitLab repositories.
+    * Include links to your blog and to the course at https://osdc.code-maven.com/ .
+    * Include a picture of you (or if you prefer not to have your picture then a picture you took of something nice.) Describe the source of that picture. Bevare of reusing images you found on the Internet. We don't want you to infringe on the copyright of someone else.
+* Add your CV in Markdown - now do this on your computer after cloning the repository.
+    * Create a new file called docs/cv.md
+    * Start writing your CV there.
+* In a blog post describe your experience. Include a link to your new GitHub pages site.
+* Link from your new web GitHub pages based web-site to your blogging account and the article you wrote.
+* Mention all the people from the course whom you know and link to their journal.
+
+* Submit by adding the link of your new blog post to your personal JSON file in the project.
 
 
