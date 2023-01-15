@@ -108,6 +108,7 @@ def collect_posts(people):
                         'title': post['title'],
                         'description': '',
                         'author': person['name'],
+                        'author_github': person['github'],
                         'published_at': post['published_at'],
                     })
     posts.sort(key=lambda post: post['published_at'], reverse=True)
