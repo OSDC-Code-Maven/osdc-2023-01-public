@@ -85,6 +85,7 @@ https://github.code-maven.com/osdc-2023-01-public/
     * Some of the blog posts
 
 * Remind everyone to check the results of the CI and if they don't understand the meaning ask it on the Slack channel.
+    * If the CI fails, fix it in the same branch. That will update the PR. Do NOT start a new branch.
 
 * Why is contributing to Open Source important?
     * You received a gift, you give a gift.
