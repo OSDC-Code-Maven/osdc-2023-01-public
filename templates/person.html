@@ -15,7 +15,7 @@ GitHub: <a href="https://github.com/{{ person['github'] }}">{{ person['github'] 
 {% if person['posts'] %}
   <ul>
   {% for post in person['posts'] %}
-    <li><a href="{{post['url']}}">{{post['details']['title']}}</a> {{post['details']['description']}}</li>
+    <li><a href="{{post['url']}}">{{post['details']['title'] or post['title']}}</a> {{post['details']['description']}}</li>
   {% endfor %}
   </ul>
 {% endif %}
