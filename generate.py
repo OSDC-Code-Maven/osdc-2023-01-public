@@ -101,6 +101,7 @@ def collect_posts(people):
             for post in person['posts']:
                 if post['details']:
                     post['details']['author'] = person['name']
+                    post['details']['author_github'] = person['github']
                     posts.append(post['details'])
                 else:
                     posts.append({
