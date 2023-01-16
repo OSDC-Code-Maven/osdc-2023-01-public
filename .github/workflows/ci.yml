@@ -21,21 +21,9 @@ env:
   CACHE_NUMBER: 2 # increase this by one to force new cache
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v3
-
-    - name: Setup Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.11
-
   generate:
     runs-on: ubuntu-latest
     name: Generate HTML
-    needs: test
 
     steps:
     - uses: actions/checkout@v3
