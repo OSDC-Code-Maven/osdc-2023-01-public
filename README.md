@@ -1,6 +1,6 @@
 # Open Sorce Development Course
 
-https://github.code-maven.com/osdc-2023-01-public/
+https://osdc.code-maven.com/osdc-2023-01-public/
 
 * Start day: 2023.01.08
 
