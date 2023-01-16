@@ -5,10 +5,18 @@
     "gitlab": "ShulyAvraham",
     "posts": [
         {
-            "title": "OSDC Course with Gabor @szabgab",
-            "url": "https://dev.to/shulyavraham/osdc-course-with-gabor-4hfi"},
+            "url": "https://dev.to/shulyavraham/osdc-course-with-gabor-4hfi"
+        },
         {
-            "title": "GitHub insights from OSDC @szabgab",
-            "url": "https://dev.to/shulyavraham/github-insights-from-osdc-szabgab-63o"}
-    ]
-}
+            "url": "https://dev.to/shulyavraham/github-insights-from-osdc-szabgab-63o"
+        },
+        {
+            "url": "https://dev.to/shulyavraham/osdc-2-a-website-for-you-and-your-projects-on-github-1km9"
+        },
+        {
+            "url": "https://dev.to/shulyavraham/blog-series-on-devto-3m1b"
+        },
+        {
+            "url": "https://dev.to/shulyavraham/run-the-osdc-website-locally-17k1"
+        }
+    ]}
