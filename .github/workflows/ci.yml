@@ -32,19 +32,6 @@ jobs:
       with:
         python-version: 3.11
 
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
-        pip install pytest
-
-    - name: Test json files pytest
-      run: |
-        pytest -svx test_json.py
-
-    - name: Test urls pytest
-      run: |
-        pytest -svx test_urls.py
-
   generate:
     runs-on: ubuntu-latest
     name: Generate HTML
@@ -59,21 +46,11 @@ jobs:
         path: cache
         key: osdc-${{ env.CACHE_NUMBER }}
 
-    - name: Setup Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.11
-
     - name: Setup Pages
       uses: actions/configure-pages@v2
 
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
-
-    - name: Generate HTML pages
-      run: |
-          python generate.py
+    - name: Generate HTML Pages
+      uses: osdc-code-maven/osdc-site-generator@v1
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
