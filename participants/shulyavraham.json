@@ -5,19 +5,18 @@
     "gitlab": "ShulyAvraham",
     "posts": [
         {
-            "title": "OSDC Course with Gabor",
-            "url": "https://dev.to/shulyavraham/osdc-course-with-gabor-4hfi"},
+            "url": "https://dev.to/shulyavraham/osdc-course-with-gabor-4hfi"
+        },
         {
-            "title": "GitHub insights from OSDC",
-            "url": "https://dev.to/shulyavraham/github-insights-from-osdc-szabgab-63o"}
+            "url": "https://dev.to/shulyavraham/github-insights-from-osdc-szabgab-63o"
+        },
         {
-            "title": "OSDC lesson 2: Create a website for you and your projects on github",
-            "url": "https://dev.to/shulyavraham/osdc-2-a-website-for-you-and-your-projects-on-github-1km9"}
+            "url": "https://dev.to/shulyavraham/osdc-2-a-website-for-you-and-your-projects-on-github-1km9"
+        },
         {
-            "title": "Create a series of blog posts on dev.to",
-            "url": "https://dev.to/shulyavraham/blog-series-on-devto-3m1b"}
+            "url": "https://dev.to/shulyavraham/blog-series-on-devto-3m1b"
+        },
         {
-            "title": "Deploy and run the OSDC website locally ",
-            "url": "https://dev.to/shulyavraham/run-the-osdc-website-locally-17k1"}
-    ]
-}
+            "url": "https://dev.to/shulyavraham/run-the-osdc-website-locally-17k1"
+        }
+    ]}
