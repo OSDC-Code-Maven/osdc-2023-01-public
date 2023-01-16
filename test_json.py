@@ -22,7 +22,7 @@ def test_json():
                 assert person['posts'].__class__.__name__ == 'list'
                 for post in person['posts']:
                     if post['url'].startswith('https://dev.to/'):
-                        assert sorted(post.keys()) == ['title', 'url'] or sorted(post.keys()) == ['url']
+                        assert list(post.keys()) == ['url']
                     else:
                         assert sorted(post.keys()) == ['published_at', 'title', 'url']
 
