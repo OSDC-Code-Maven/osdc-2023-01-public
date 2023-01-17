@@ -6,10 +6,11 @@ https://osdc.code-maven.com/osdc-2023-01-public/
 
 ## TOC
 
-* [Session 1](#session-1)
+* [Session 1 - Welcome - Version Control - Journal - Slack](#session-1---welcome---version-control---journal---slack)
 * [Assignment 1](#assignment-1)
-* [Session 2](#session-2)
+* [Session 2 - Create GitHub Pages using the GitHub UI, Markdown](#session-2---create-github-pages-using-the-github-ui-markdown)
 * [Assignment 2](#assignment-2)
+* [Session 3 - next week](#session-3---next-week)
 
 ## Session 1 - Welcome - Version Control - Journal - Slack
 
