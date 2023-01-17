@@ -4,7 +4,16 @@ https://osdc.code-maven.com/osdc-2023-01-public/
 
 * Start day: 2023.01.08
 
-## Session 1 - Welcome - Version Control - Journal - Slack
+## TOC
+
+* [Session 1](#session-1)
+* [Assignment 1](#assignment-1)
+* [Session 2](#session-2)
+* [Assignment 2](#assignment-2)
+
+## Session 1
+
+### Welcome - Version Control - Journal - Slack
 
 * Welcome
     * overview of the [course](https://osdc.code-maven.com/)
@@ -78,7 +87,9 @@ https://osdc.code-maven.com/osdc-2023-01-public/
 
 * The first sessions should be longer. Maybe two parts of 45 minutes and I should cover a number of topics that were now postponed to the 2nd session
 
-## Session 2 - Create GitHub Pages using the GitHub UI, Markdown
+## Session 2
+
+### Create GitHub Pages using the GitHub UI, Markdown
 
 * Show the results so far.
     * Our web site
@@ -159,7 +170,9 @@ https://osdc.code-maven.com/osdc-2023-01-public/
 
 * Submit by adding the link of your new blog post to your personal JSON file in the project.
 
-## Session 3 - next week
+## Session 3
+
+### next week
 
 * Show the drawing of the GitHub PR process in the cloud we have used in the previous session.
 
