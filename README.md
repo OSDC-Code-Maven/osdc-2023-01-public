@@ -194,3 +194,5 @@ git remote -v
 
 Do this on your computer after cloning the repository.
 
+* Demo project https://github.com/zarr-developers/zarr-python/ and PR https://github.com/zarr-developers/zarr-python/pull/1299
+
