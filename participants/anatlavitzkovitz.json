@@ -2,5 +2,13 @@
     "name": "Anat Lavi-Itzkovitz",
     "linkedin": "anat-lavi-itzkovitz",
     "github": "anatlavitzkovitz",
-    "gitlab": "anat.lavitz"
+    "gitlab": "anat.lavitz",
+     "posts": [
+        {
+            "url": "https://dev.to/anatlavitzkovitz/osdc-2023-assignment1-140i"
+        },
+         {
+            "url": "https://dev.to/anatlavitzkovitz/osdc-2023-assignment2-15fl"   
+         }
+      ]
 }

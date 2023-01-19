@@ -17,50 +17,28 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+env:
+  CACHE_NUMBER: 2 # increase this by one to force new cache
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v3
-
-    - name: Setup Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.11
-
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
-        pip install pytest
-
-    - name: Test with pytest
-      run: pytest -svx
-
   generate:
     runs-on: ubuntu-latest
     name: Generate HTML
-    needs: test
 
     steps:
     - uses: actions/checkout@v3
 
-    - name: Setup Python
-      uses: actions/setup-python@v4
+    - name: Cache fetched data
+      uses: actions/cache@v3
       with:
-        python-version: 3.11
+        path: cache
+        key: osdc-${{ env.CACHE_NUMBER }}
 
     - name: Setup Pages
       uses: actions/configure-pages@v2
 
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
-
-    - name: Generate HTML pages
-      run: |
-          python generate.py
+    - name: Generate HTML Pages
+      uses: osdc-code-maven/osdc-site-generator@v1
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
