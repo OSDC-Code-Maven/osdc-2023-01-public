@@ -2,5 +2,10 @@
     "name": "Alex M. Schapelle",
     "linkedin": "alex-schapelle",
     "github": "zero-pytagoras",
-    "gitlab": "silent-mobius"
+    "gitlab": "silent-mobius",
+    "posts" : [
+                {
+                        "url"   : "https://dev.to/silent_mobius/thus-the-new-journey-begins-18kp"
+        }
+    ]
 }

@@ -1,5 +1,10 @@
 {
   "name": "Adi Egozi",
   "linkedin": "adiego221",
-  "github": "adieg"
+  "github": "adieg",
+  "posts": [
+    {
+      "url": "https://dev.to/adieg/osdc-course-2023-post-1-3b7"
+    }
+  ]
 }
