@@ -7,8 +7,11 @@
                 {
                         "title" :"The Beginning",
                         "url"   : "https://dev.to/silent_mobius/thus-the-new-journey-begins-18kp",
-                        "title" : "Journey Of Thousand Pages",
-                        "url"   : "https://dev.to/silent_mobius/journey-of-thousand-pages-152k"
-        }
+                      
+                },
+                {
+                    "title" : "Journey Of Thousand Pages",
+                    "url"   : "https://dev.to/silent_mobius/journey-of-thousand-pages-152k"
+                }
     ]
 }
