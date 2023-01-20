@@ -10,9 +10,14 @@
             "published_at": "2023-01-20T11:19:48Z"},
 
         {
-            "title": "my first blog post",
+            "title": "About Jekyll and gh-pages",
             "url": "https://dev.to/kobkob2018/jekyll-and-the-gh-pages-4dkc",
-            "published_at": "2023-01-20T11:39:48Z"},            
+            "published_at": "2023-01-20T11:39:48Z"},   
+            
+        {
+            "title": "CRUDor earlybird in dev.to",
+            "url": "https://dev.to/kobkob2018/early-bird-for-the-crudor-mvc-system-enterprise-4npj",
+            "published_at": "2023-01-20T11:39:48Z"},   
 
         {
             "title": "my first blog post",
