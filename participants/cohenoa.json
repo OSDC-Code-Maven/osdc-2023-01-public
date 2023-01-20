@@ -2,5 +2,10 @@
 	"name": "Noa Cohen",
 	"linkedin": "cohenoa",
 	"github": "cohenoa",
-	"devto": "cohenoa"
+	"devto": "cohenoa",
+	"posts": [
+		{
+			"url": "https://dev.to/cohenoa/joining-the-open-source-development-course-298k"
+		}
+	]
 }
