@@ -3,6 +3,10 @@
     "linkedin": "kobi-avraham-0985211a",
     "github": "kobkob2018",
     "posts": [
+        {
+            "title": "My new website in github.io",
+            "url": "https://kobkob2018.github.io/",
+            "published_at": "2023-01-14T22:23:39Z"},
 
         {
             "url": "https://dev.to/kobkob2018/open-source-developement-cource-57no"},
