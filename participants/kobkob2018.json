@@ -6,15 +6,18 @@
 
         {
             "title": "Moving my blog to dev.to",
-            "url": "https://dev.to/kobkob2018/open-source-developement-cource-57no"},
+            "url": "https://dev.to/kobkob2018/open-source-developement-cource-57no",
+            "published_at": "2023-01-20T11:19:48Z"},
 
         {
-            "title": "About Jekyll and gh-pages", 
-            "url": "https://dev.to/kobkob2018/jekyll-and-the-gh-pages-4dkc"},   
+            "title": "About Jekyll and gh-pages",
+            "url": "https://dev.to/kobkob2018/jekyll-and-the-gh-pages-4dkc",
+            "published_at": "2023-01-20T11:39:48Z"},   
             
         {
             "title": "CRUDor earlybird in dev.to",
-            "url": "https://dev.to/kobkob2018/early-bird-for-the-crudor-mvc-system-enterprise-4npj"},   
+            "url": "https://dev.to/kobkob2018/early-bird-for-the-crudor-mvc-system-enterprise-4npj",
+            "published_at": "2023-01-20T11:39:48Z"},   
 
         {
             "title": "my first blog post",
