@@ -154,7 +154,6 @@ https://osdc.code-maven.com/osdc-2023-01-public/
 * Create a web site using GitHub pages with Markdown. At first using the interface on the website of GitHub:
     * Create your own GitHub repository  `username.github.io`.
     * Create the `docs` folder and in the `docs` folder create a file called `index.md`.
-    * Add to it the main page of your new personal web-site.
     * Include links to your GitHub and GitLab repositories.
     * Include links to your blog and to the course at https://osdc.code-maven.com/ .
     * Include a picture of you (or if you prefer not to have your picture then a picture you took of something nice.) Describe the source of that picture. Bevare of reusing images you found on the Internet. We don't want you to infringe on the copyright of someone else.
