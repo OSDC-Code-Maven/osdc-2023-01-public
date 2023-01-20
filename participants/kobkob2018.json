@@ -3,6 +3,17 @@
     "linkedin": "kobi-avraham-0985211a",
     "github": "kobkob2018",
     "posts": [
+
+        {
+            "title": "Moving my blog to dev.to",
+            "url": "https://dev.to/kobkob2018/open-source-developement-cource-57no",
+            "published_at": "2023-01-20T11:19:48Z"},
+
+        {
+            "title": "my first blog post",
+            "url": "https://dev.to/kobkob2018/jekyll-and-the-gh-pages-4dkc",
+            "published_at": "2023-01-20T11:39:48Z"},            
+
         {
             "title": "my first blog post",
             "url": "https://kobkob.hashnode.dev/i-am-writing-my-first-blogpost",
@@ -11,5 +22,6 @@
             "title": "early bird for contributors to the CRUDor system enterprise",
             "url": "https://kobkob.hashnode.dev/early-bird-for-the-crudor-mvc-system-enterprise",
             "published_at": "2023-01-14T12:29:39Z"}
+            
     ]
 }
