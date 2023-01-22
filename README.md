@@ -174,13 +174,15 @@ https://osdc.code-maven.com/osdc-2023-01-public/
 
 * [GitLab](https://gitlab.com/): just show that it exists
 
-* Then show how to use Git on the command line to update the GitHub pages [git slides](https://code-maven.com/slides/git/)
+* Show how to use Git on the command line to update the GitHub pages [git slides](https://code-maven.com/slides/git/) use a new Windows machine for this.
 * Git - use the following commands:
 
 ```
 git config --global --add user.name "Foo Bar"
 git config --global --add user.email foo@bar.com
 git clone
+
+ssh-keygen  Add public key to GitHub
 
 git status
 git diff
