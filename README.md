@@ -164,7 +164,7 @@ https://osdc.code-maven.com/osdc-2023-01-public/
 * Link from your new web GitHub pages based web-site to your blogging account and the article you wrote.
 * Mention all the people from the course whom you know and link to their journal.
 
-* Submit by adding the link of your new blog post to your personal JSON file in the project.
+* Submit by adding the link of your new blog post to your personal JSON file in the project and adding a field called "github_page" to your personal JSON file with a value of "true". See the example of szabgab.json if unclear how.
 
 ## Session 3 - next week
 
