@@ -146,8 +146,8 @@ https://osdc.code-maven.com/osdc-2023-01-public/
     * See the URL now shows the new page.
 * [GitHub flavored Markdown](https://github.github.com/gfm/) that can be used in Markdown files and elsewhere on GitHub.
 
-* [Video part 1](https://youtu.be/m05n94cxdDI)
-* [Video part 2](https://youtu.be/oJfMSgotdxM)
+* [Video 2.1](https://youtu.be/m05n94cxdDI)
+* [Video 2.2](https://youtu.be/oJfMSgotdxM)
 
 
 ### Assignment 2
@@ -220,6 +220,9 @@ git reset HEAD~1   # remove the most recent commit
 ```
 git push --force   # forcibly overwrite what is in the remote
 ```
+
+* [Video 3.1](https://youtu.be/jkB2fO-D4X0)
+* [Video 3.2](https://youtu.be/v1b1F_BTfrA)
 
 
 ## Assignment
