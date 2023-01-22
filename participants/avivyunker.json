@@ -1,12 +1,13 @@
 {
     "name": "Aviv Yunker",
-    "linkedin": "AvivYunker",
-    "github": "AvivYunker",
-    "gitlab": "AvivYunker",
-    "devto": "AvivYunker",
+    "linkedin": "https://www.linkedin.com/in/aviv-yunker-6289431a3/",
+    "github": "https://github.com/avivyunker",
+    "gitlab": "https://gitlab.com/AvivYunker",
+    "devto": "https://dev.to/avivyunker",
     "posts": [
       {
-	     "url": "https://dev.to/avivyunker/first-post-3kgo"
+	     "post1_url": "https://dev.to/avivyunker/first-post-3kgo",
+	     "post2_url": "https://dev.to/avivyunker/post-of-2nd-assignment-2m8b"
       }
     ]
 }
