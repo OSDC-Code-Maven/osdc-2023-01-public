@@ -30,7 +30,7 @@ https://osdc.code-maven.com/osdc-2023-01-public/
         * Self employed
         * Training
         * Introducing testing, CI etc.
-    * If you'd like to send me an email replay to the one I sent you. Keep the subject line. Remove the irrelevant content.
+    * If you'd like to send me an email reply to the one I sent you. Keep the subject line. Remove the irrelevant content.
       Without this it is **very** difficult for me to associate all the emails with the different courses I teach.
     * Assignments
         * Will be in some public GitHub or GitLab repositories
