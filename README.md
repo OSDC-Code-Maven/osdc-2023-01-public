@@ -10,7 +10,8 @@ https://osdc.code-maven.com/osdc-2023-01-public/
 * [Assignment 1](#assignment-1)
 * [Session 2 - Create GitHub Pages using the GitHub UI, Markdown](#session-2---create-github-pages-using-the-github-ui-markdown)
 * [Assignment 2](#assignment-2)
-* [Session 3 - next week](#session-3---next-week)
+* [Session 3 - git client](#session-3---git-client)
+* [Session 4 - next week](#session-4---next-week)
 
 ## Session 1 - Welcome - Version Control - Journal - Slack
 
@@ -29,7 +30,7 @@ https://osdc.code-maven.com/osdc-2023-01-public/
         * Self employed
         * Training
         * Introducing testing, CI etc.
-    * If you'd like to send me an email replay to the one I sent you. Keep the subject line. Remove the irrelevant content.
+    * If you'd like to send me an email reply to the one I sent you. Keep the subject line. Remove the irrelevant content.
       Without this it is **very** difficult for me to associate all the emails with the different courses I teach.
     * Assignments
         * Will be in some public GitHub or GitLab repositories
@@ -145,8 +146,8 @@ https://osdc.code-maven.com/osdc-2023-01-public/
     * See the URL now shows the new page.
 * [GitHub flavored Markdown](https://github.github.com/gfm/) that can be used in Markdown files and elsewhere on GitHub.
 
-* [Video part 1](https://youtu.be/m05n94cxdDI)
-* [Video part 2](https://youtu.be/oJfMSgotdxM)
+* [Video 2.1](https://youtu.be/m05n94cxdDI)
+* [Video 2.2](https://youtu.be/oJfMSgotdxM)
 
 
 ### Assignment 2
@@ -154,7 +155,6 @@ https://osdc.code-maven.com/osdc-2023-01-public/
 * Create a web site using GitHub pages with Markdown. At first using the interface on the website of GitHub:
     * Create your own GitHub repository  `username.github.io`.
     * Create the `docs` folder and in the `docs` folder create a file called `index.md`.
-    * Add to it the main page of your new personal web-site.
     * Include links to your GitHub and GitLab repositories.
     * Include links to your blog and to the course at https://osdc.code-maven.com/ .
     * Include a picture of you (or if you prefer not to have your picture then a picture you took of something nice.) Describe the source of that picture. Bevare of reusing images you found on the Internet. We don't want you to infringe on the copyright of someone else.
@@ -165,9 +165,9 @@ https://osdc.code-maven.com/osdc-2023-01-public/
 * Link from your new web GitHub pages based web-site to your blogging account and the article you wrote.
 * Mention all the people from the course whom you know and link to their journal.
 
-* Submit by adding the link of your new blog post to your personal JSON file in the project.
+* Submit by adding the link of your new blog post to your personal JSON file in the project and adding a field called "github_page" to your personal JSON file with a value of "true". See the example of szabgab.json if unclear how.
 
-## Session 3 - next week
+## Session 3 - git client
 
 * Show the drawing of the GitHub PR process in the cloud we have used in the previous session.
 
@@ -175,12 +175,25 @@ https://osdc.code-maven.com/osdc-2023-01-public/
 
 * [GitLab](https://gitlab.com/): just show that it exists
 
-* Then show how to use Git on the command line to update the GitHub pages [git slides](https://code-maven.com/slides/git/)
+* Show how to use Git on the command line to update the GitHub pages [git slides](https://code-maven.com/slides/git/) use a new Windows machine for this.
 * Git - use the following commands:
 
 ```
 git config --global --add user.name "Foo Bar"
 git config --global --add user.email foo@bar.com
+```
+
+These commands created the `~/.gitconfig` file.
+
+
+Generate private-key public-key pair. Put the public-key in your GitHub user.
+
+```
+sh-keygen  Add public key to GitHub
+```
+
+
+```
 git clone
 
 git status
@@ -192,7 +205,37 @@ git push
 git remote -v
 ```
 
-Do this on your computer after cloning the repository.
+We also saw:
+
+```
+gitk --all
+```
+
+We also saw some dangerous commands:
+
+```
+git reset HEAD~1   # remove the most recent commit
+```
+
+```
+git push --force   # forcibly overwrite what is in the remote
+```
+
+* [Video 3.1](https://youtu.be/jkB2fO-D4X0)
+* [Video 3.2](https://youtu.be/v1b1F_BTfrA)
+
+
+## Assignment
+
+* Clone the repository of your github pages.
+* Update the files. (add new files).
+* Commit the changes.
+* Push the changes out
+
+
+## Session 4 - next week
+
+
 
 * Demo project https://github.com/zarr-developers/zarr-python/ and PR https://github.com/zarr-developers/zarr-python/pull/1299
 

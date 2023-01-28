@@ -7,6 +7,8 @@ on:
 #    - cron: '9 * * * *'
   workflow_dispatch:
 
+env:
+    MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
 
 permissions:
   contents: read
@@ -17,8 +19,8 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
-env:
-  CACHE_NUMBER: 2 # increase this by one to force new cache
+#env:
+#  CACHE_NUMBER: 2 # increase this by one to force new cache
 
 jobs:
   generate:
@@ -28,11 +30,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Cache fetched data
-      uses: actions/cache@v3
-      with:
-        path: cache
-        key: osdc-${{ env.CACHE_NUMBER }}
+#    - name: Cache fetched data
+#      uses: actions/cache@v3
+#      with:
+#        path: cache
+#        key: osdc-${{ env.CACHE_NUMBER }}
 
     - name: Setup Pages
       uses: actions/configure-pages@v2
