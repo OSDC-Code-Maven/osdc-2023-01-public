@@ -16,6 +16,10 @@ https://osdc.code-maven.com/osdc-2023-01-public/
 * [Assignment 4](#assignment-4)
 * [Session 5 - next week](#session-5---next-week)
 
+## Videos
+
+* [Playlist](https://www.youtube.com/playlist?list=PLm2NBp4tb5F20b5mGbNXFOzQWtbd5K5IH)
+
 ## Session 1 - Welcome - Version Control - Journal - Slack
 
 * Welcome
