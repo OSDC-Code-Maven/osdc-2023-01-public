@@ -276,7 +276,6 @@ A couple of suggestions for the blog posts
 
 ## Assignment 4
 
-* Update your JSON file and add a list of languages you would like to work with in the course. The list of available languages can be found [here](). You can ask me to add other languages or you can send a pull-request directly to that repository to add other languages.
 * Update the JSON file and inlcude a list of GitHub and GitLab repositories of projects that you use.
     * If you write Python and you have `import requests` then include the link `https://github.com/psf/requests`.
     * If you write Perl and you have `use WWW::Mechanize;` in your code then include `https://github.com/libwww-perl/WWW-Mechanize`
