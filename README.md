@@ -264,6 +264,7 @@ A couple of suggestions for the blog posts
 * Connect the two, `push` out the local repo.
 * Add tests to the project.
     * [Python testing demo](https://code-maven.com/slides/python/testing-demo)
+    * [Perl testing demo](https://code-maven.com/slides/perl/testing-demo)
 * Push out the changes.
 
 * Generate test coverage report.
