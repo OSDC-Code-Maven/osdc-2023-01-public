@@ -271,8 +271,14 @@ A couple of suggestions for the blog posts
 * Push out the changes.
 
 * Generate test coverage report.
-* Add GitHub Actions.
 
+### Notes from the meeting
+
+* [SO with drawing about Git staging](https://stackoverflow.com/questions/13072111/gits-local-repository-and-remote-repository-confusing-concepts)
+* [The slides](https://code-maven.com/slides/)
+* [Source of the slides](https://github.com/szabgab/slides)
+* [Demo repo](https://github.com/OSDC-Code-Maven/osdc-2023-01-public-testing-demo)
+* [PyDigger](https://pydigger.com/)
 
 ## Assignment 4
 
@@ -301,6 +307,7 @@ A couple of suggestions for the blog posts
 
 ## Session 5 - next week
 
+* Add GitHub Actions.
 
 * Demo project https://github.com/zarr-developers/zarr-python/ and PR https://github.com/zarr-developers/zarr-python/pull/1299
 
