@@ -14,6 +14,9 @@
             "url": "https://he.code-maven.com/osdc-public-hebrew-2023-01-part-1",
             "published_at": "2023-01-08T20:29:48Z"
         }
+    ],
+    "projects": [
+        "https://github.com/pallets/flask"
     ]
 }
 
