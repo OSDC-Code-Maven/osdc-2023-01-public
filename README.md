@@ -232,6 +232,13 @@ git push --force   # forcibly overwrite what is in the remote
 * Commit the changes.
 * Push the changes out
 
+A couple of suggestions for the blog posts
+* Use a title that can sound interesting to others as well eg. **How to contribute to an open source project** or  **How to Send a pull request on GitHub**.
+* Add `osdc` tag and other relevant tags.
+* Add the `series:` field to the `Jekyll front matter` (the header of each post on DEV.to)
+* Use Markdown in the post.
+* Include links to the relevant sites and pages such as the web site of the [Open Source Development Course](https://osdc.code-maven.com/) and the web site of our course: [Open Source Development Course in Hebrew](https://osdc.code-maven.com/c/osdc-2023-01-public).
+
 
 ## Session 4 - next week
 
