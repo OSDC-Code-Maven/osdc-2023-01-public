@@ -12,7 +12,9 @@ https://osdc.code-maven.com/osdc-2023-01-public/
 * [Assignment 2](#assignment-2)
 * [Session 3 - git client](#session-3---git-client)
 * [Assignment 3](#assignment-3)
-* [Session 4 - next week](#session-4---next-week)
+* [Session 4 - Upload your own project - testing](#session-4---upload-your-own-project---testing)
+* [Assignment 4](#assignment-4)
+* [Session 5 - next week](#session-5---next-week)
 
 ## Session 1 - Welcome - Version Control - Journal - Slack
 
