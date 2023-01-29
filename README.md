@@ -280,6 +280,9 @@ A couple of suggestions for the blog posts
 * [Demo repo](https://github.com/OSDC-Code-Maven/osdc-2023-01-public-testing-demo)
 * [PyDigger](https://pydigger.com/)
 
+* [Video 4-1](https://youtu.be/e6Dc1SGhOQw)
+* [Video 4-2](https://youtu.be/bdYXs7Szadg)
+
 ## Assignment 4
 
 * Update the JSON file and inlcude a list of GitHub and GitLab repositories of projects that you use.
@@ -303,6 +306,7 @@ A couple of suggestions for the blog posts
 
 
 * Write a blog post about the work you have done with plenty of links. Add it to your JSON file.
+
 
 
 ## Session 5 - next week
