@@ -3,6 +3,7 @@
     "linkedin": "ShulyAvraham",
     "github": "ShulyAvraham",
     "gitlab": "ShulyAvraham",
+    "github_page": true,
     "posts": [
         {
             "url": "https://dev.to/shulyavraham/osdc-course-with-gabor-4hfi"

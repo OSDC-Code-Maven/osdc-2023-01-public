@@ -2,7 +2,59 @@
     "name": "Yacov Avraham",
     "linkedin": "kobi-avraham-0985211a",
     "github": "kobkob2018",
+    "github_page": true,
     "posts": [
+
+        {
+            "url": "https://dev.to/kobkob2018/open-source-developement-cource-57no"},
+
+        {
+            
+            "url": "https://dev.to/kobkob2018/jekyll-and-the-gh-pages-4dkc"},   
+            
+        {
+            
+            "url": "https://dev.to/kobkob2018/early-bird-for-the-crudor-mvc-system-enterprise-4npj"},   
+
+        {
+            "title": "My new website in github.io",
+            "url": "https://kobkob2018.github.io/",
+            "published_at": "2023-01-14T22:23:39Z"},
+
+        {
+            "url": "https://dev.to/kobkob2018/open-source-developement-cource-57no"},
+
+        {
+            
+            "url": "https://dev.to/kobkob2018/jekyll-and-the-gh-pages-4dkc"},   
+            
+        {
+            
+            "url": "https://dev.to/kobkob2018/early-bird-for-the-crudor-mvc-system-enterprise-4npj"},   
+
+        {
+            "title": "My new website in github.io",
+            "url": "https://kobkob2018.github.io/",
+            "published_at": "2023-01-14T22:23:39Z"},
+        {
+                "title": "My news page",
+                "url": "https://kobkob2018.github.io/news",
+                "published_at": "2023-01-22T14:15:39Z"},
+
+        {
+            "url": "https://dev.to/kobkob2018/how-to-embed-posts-from-devto-in-your-website-page-368m"},
+
+        {
+            "url": "https://dev.to/kobkob2018/open-source-developement-cource-57no"},
+
+        {
+            
+            "url": "https://dev.to/kobkob2018/jekyll-and-the-gh-pages-4dkc"},   
+            
+        {
+            
+            "url": "https://dev.to/kobkob2018/early-bird-for-the-crudor-mvc-system-enterprise-4npj"},   
+
         {
             "title": "my first blog post",
             "url": "https://kobkob.hashnode.dev/i-am-writing-my-first-blogpost",
@@ -11,5 +63,6 @@
             "title": "early bird for contributors to the CRUDor system enterprise",
             "url": "https://kobkob.hashnode.dev/early-bird-for-the-crudor-mvc-system-enterprise",
             "published_at": "2023-01-14T12:29:39Z"}
+            
     ]
 }

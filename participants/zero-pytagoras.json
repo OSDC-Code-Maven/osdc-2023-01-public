@@ -3,9 +3,14 @@
     "linkedin": "alex-schapelle",
     "github": "zero-pytagoras",
     "gitlab": "silent-mobius",
+    "github_page": true,
     "posts" : [
                 {
-                        "url"   : "https://dev.to/silent_mobius/thus-the-new-journey-begins-18kp"
-        }
+                    "url"   : "https://dev.to/silent_mobius/thus-the-new-journey-begins-18kp"
+                      
+                },
+                {
+                    "url"   : "https://dev.to/silent_mobius/journey-of-thousand-pages-152k"
+                }
     ]
 }
