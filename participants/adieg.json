@@ -15,20 +15,10 @@
     }
   ],
   "projects": [
-    {
-      "https://github.com/satijalab/seurat"
-    },
-    {
-      "https://github.com/kevinblighe/EnhancedVolcano"
-    },
-    {
-      "https://github.com/rorynolan/autothresholdr"
-    },
-    {
-      "https://github.com/scverse/scanpy"
-    },
-    {
+      "https://github.com/satijalab/seurat",
+      "https://github.com/kevinblighe/EnhancedVolcano",
+      "https://github.com/rorynolan/autothresholdr",
+      "https://github.com/scverse/scanpy",
       "https://github.com/bioinformatics-centre/kaiju"
-    }
   ]
 }
