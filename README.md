@@ -14,7 +14,8 @@ https://osdc.code-maven.com/osdc-2023-01-public/
 * [Assignment 3](#assignment-3)
 * [Session 4 - Upload your own project - testing](#session-4---upload-your-own-project---testing)
 * [Assignment 4](#assignment-4)
-* [Session 5 - next week](#session-5---next-week)
+* [Assignment 5](#assignment-5)
+* [Session 6 - next week](#session-6---next-week)
 
 ## Videos
 
@@ -315,7 +316,30 @@ A couple of suggestions for the blog posts
 
 ## Session 5 - next week
 
+* Slack
+    * paste link
+    * edit message
+    * Add link with text
+    * Use threads
+
+* Go over the few project people have submitted and comment. Can you get the answer to the follow questions? If not, open an issue asking about it.
+    * What does this project do?
+    * How do I install dependencies?
+    * How do I run the tests?
+    * How do I use this project?
+
+* Add requirements to our test project.
+
+
+
+
+
+## Assignment 5
+
+## Session 6 - next week
+
 * Add GitHub Actions.
 
 * Demo project https://github.com/zarr-developers/zarr-python/ and PR https://github.com/zarr-developers/zarr-python/pull/1299
+
 
