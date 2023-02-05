@@ -6,6 +6,7 @@ on:
 #  schedule:
 #    - cron: '9 * * * *'
   workflow_dispatch:
+  workflow_call:
 
 env:
     MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
