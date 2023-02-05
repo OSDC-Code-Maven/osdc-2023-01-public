@@ -314,7 +314,7 @@ A couple of suggestions for the blog posts
 
 
 
-## Session 5 - next week
+## Session 5 - clone, fork, push, pr
 
 * Slack
     * paste link
@@ -328,10 +328,41 @@ A couple of suggestions for the blog posts
     * How do I run the tests?
     * How do I use this project?
 
-* Add requirements to our test project.
+
+* Add requirements to the project of Shuly.
+
+* `clone`
+* git checkout -b branch/name
+* git push
+* git remote add
+
+We used the following to map the name "origin" for the purpuses of `push` to the forked repository.
+
+```
+git remote set-url origin --push git@github.com:szabgab/LIMS_results_validation.git
+```
+
+* `git pull` is `git fetch` followed by either `merge` or `rebase`
+In the `~/.gitconfig` file there can be an entry that will set this
+
+This will make `pull = fetch + merge`
+```
+[pull]
+    rebase = false
+```
+
+This will make `pull = fetch + rebase`
+
+```
+[pull]
+    rebase = true
+```
+
+`merge` vs. `rebase` only impacts the history of the repository and not the code.
 
 
-
+* [Video 5-1](https://youtu.be/RlTkt5kjH7o)
+* [Video 5-2](https://youtu.be/f6L9FsrmDio)
 
 
 ## Assignment 5
