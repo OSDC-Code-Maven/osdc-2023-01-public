@@ -9,6 +9,16 @@
     },
     {
       "url": "https://dev.to/adieg/osdc-course-2023-post-2-1n"
+    },
+    {
+      "url": "https://dev.to/adieg/osdc-course-2023-post-4-ng6"
     }
-  ]
+  ],
+  "projects": [
+      "https://github.com/satijalab/seurat",
+      "https://github.com/kevinblighe/EnhancedVolcano",
+      "https://github.com/rorynolan/autothresholdr",
+      "https://github.com/scverse/scanpy",
+      "https://github.com/bioinformatics-centre/kaiju"
+	]
 }
