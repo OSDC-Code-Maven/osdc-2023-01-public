@@ -15,7 +15,8 @@ https://osdc.code-maven.com/osdc-2023-01-public/
 * [Session 4 - Upload your own project - testing](#session-4---upload-your-own-project---testing)
 * [Assignment 4](#assignment-4)
 * [Assignment 5](#assignment-5)
-* [Session 6 - next week](#session-6---next-week)
+* [Assignment 6](#assignment-6)
+* [Session 7 - next week](#session-7---next-week)
 
 ## Videos
 
@@ -367,10 +368,84 @@ This will make `pull = fetch + rebase`
 
 ## Assignment 5
 
-## Session 6 - next week
+## Session 6 - testing R, Docker, gitignore, GitHub Actions
+
+* Firs we saw an example writing a test in R
+
+* Then we had an introduction to Docker
+
+Running a plain Ubuntu-based image:
+
+```
+docker run --rm -it ubuntu:22.04 bash
+```
+
+Installing stuff
+
+```
+apt-get update
+apt-get install python3
+```
+
+Running an image with Python 3.11 in it:
+
+```
+docker run --rm -it python:3.11
+```
+
+* Then we looked at the [Dockerfile for mydocker of Gabor](https://github.com/szabgab/mydocker)
+
+
+* [Docker HUB](https://hub.docker.com/)
+* [Docker Images based on Ubuntu](https://hub.docker.com/_/ubuntu)
+* [Docker Images for Python](https://hub.docker.com/_/python)
+* [Docker Images for R](https://hub.docker.com/_/r-base)
+
+* Using [PyDigger](https://pydigger.com/) we found a simple python project called [Python-tools](https://github.com/zguillez/python-toolz) that had a [link to GitHub but no CI](https://pydigger.com/search/has-github-no-ci).
+* We found it has some file in the `__pycache__` folder added. Reported it in this [issue](https://github.com/zguillez/python-toolz/issues/1).
+* The added it to [.gitignore PR](https://github.com/zguillez/python-toolz/pull/2)
+
+```
+git clone git@github.com:zguillez/python-toolz.git
+docker run -v/home/gabor/os/python-toolz:/opt --rm -it python:3.11 bash
+git remote add fork git@github.com:szabgab/python-toolz.git
+```
+
+* We also wrote a test that executed the already existing example and configured GitHub Actions to run it on 3 versions of Python on macOS and on Linux. On Windows the tests failed due to newline issues. We sent a [Pull Request](https://github.com/zguillez/python-toolz/pull/3) with that.
+
+
+* We used the [GitHub Actions skeleton for Python](https://github.com/szabgab/github-actions-python).
+* There are more [GitHub Actions skeletons](https://code-maven.com/github-actions).
+
+* Similar to the PyDigger there are also:
+* [Ruby Digger](https://ruby-digger.code-maven.com/)
+* [CPAN Digger](https://cpan-digger.perlmaven.com/) for Perl
+* [CI Challenge of December 2022](https://code-maven.com/2022-december-ci-challenge) in which every I sent a PR adding GitHub Actions to an open source project written in Python, Perl, or Ruby.
+
+## Assignment 6
+
+* Pick a few projects in your favorite programming language and try to run its tests locally in a Docker container.
+* If you encounter any problems, report them. Feel free to first report them in our Slack and report them after we discussed them.
+    * Files added that should be ignored with .gitignore
+    * Generated files not listed in .gitignore
+    * No instructions on how to run tests.
+    * No tests.
+    * Tests failing on your local system (inside a Docker is safer).
+    * If you can set up GitHub Actions.
+
+
+## Session 7 - next week
+
+
+
+
+
+
+* dev.to mention the setting to use the Markdown editor
 
 * Add GitHub Actions.
 
 * Demo project https://github.com/zarr-developers/zarr-python/ and PR https://github.com/zarr-developers/zarr-python/pull/1299
+
 
 
