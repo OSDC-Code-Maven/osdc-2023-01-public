@@ -422,6 +422,9 @@ git remote add fork git@github.com:szabgab/python-toolz.git
 * [CPAN Digger](https://cpan-digger.perlmaven.com/) for Perl
 * [CI Challenge of December 2022](https://code-maven.com/2022-december-ci-challenge) in which every I sent a PR adding GitHub Actions to an open source project written in Python, Perl, or Ruby.
 
+* [Video 6-1](https://youtu.be/9cgcgKXH72g)
+* [Video 6-2](https://youtu.be/chTGh4pFJhk)
+
 ## Assignment 6
 
 * Pick a few projects in your favorite programming language and try to run its tests locally in a Docker container.
