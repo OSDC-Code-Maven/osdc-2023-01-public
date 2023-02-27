@@ -538,6 +538,11 @@ Working in a separate branch is less ideal, but when preparing a PR that's the w
 
 * A sugestion by Alex was: Take a project in some language an convert to another language.
 
+* I showed the [Kantoniko](https://kantoniko.com/) web site - a multilingual Ladino dictionary.
+    * I mentioned the [Rashi script](https://en.wikipedia.org/wiki/Rashi_script)
+    * and also [Solitreo](https://en.wikipedia.org/wiki/Solitreo)
+    * We have an example in Rashi, the word [abashar](https://kantoniko.com/words/ladino/abashar)
+
 * [Video 7-1](https://youtu.be/8iG0cd7TU6s)
 * [Video 7-2](https://youtu.be/byJYSCO2oaQ)
 
