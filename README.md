@@ -17,6 +17,7 @@ https://osdc.code-maven.com/osdc-2023-01-public/
 * [Assignment 5](#assignment-5)
 * [Assignment 6](#assignment-6)
 * [Session 7](#session-7)
+* [Assignment 6](#assignment-6)
 * [Session 8](#session-8)
 
 ## Videos
@@ -461,6 +462,19 @@ git checkout mymain                       # Go to mymain
 git merge pr-1299                         # Merge the PR into "mymain"
 ```
 
+There is actually a shorter version:
+
+```
+git fetch origin pull/PR/head:NAME_OF_LOCAL_BRANCH
+```
+
+Like this:
+
+```
+git fetch origin pull/1351/head:p-1351
+```
+
+
 First I showed this using a [simple PR](https://github.com/zarr-developers/zarr-python/pull/1357) and it worked.
 
 Then I tried with the one [we actually wanted](https://github.com/zarr-developers/zarr-python/pull/1299) and it had a nasty merge-conflict.
@@ -504,23 +518,42 @@ However the better solution is to reduce the chances of conflict or even to avoi
 Working in a separate branch is less ideal, but when preparing a PR that's the way to work. In that case try to make the PR as small as possible and try to get it merged as soon as possible. Follow the project and keep rebasing your branch to be up-to-date with the main development branch of the project.
 
 
-
-
 * We mentioned the Dockerfile I use to run projects locally. It can be found [here](https://github.com/szabgab/mydocker)
+* [R-base](https://hub.docker.com/_/r-base) Docker images for R
 
+* [testthat](https://testthat.r-lib.org/) for testing R code
 
-* dev.to mention the setting to use the Markdown editor
+* How to find projects on GitHub:
+    * Either sort them by popularity (stars) ot by recent activity: (Recently update)
+    * Looking at popular project can help understanding how such projects are managed
+    * Looking at recently update projects with few stars will probably provide more easy opportunities to contribute tests, documentation, CI, etc.
+    * [Projects in R](https://github.com/topics/r?l=r&o=desc&s=stars)
+    * [Projects in PHP](https://github.com/topics/php?l=php&o=desc&s=stars)
 
+* One thing I'd expect from each project either in its README file or in the CONTRIBUTION file is an explanation
+    * how to set up the local development environment
+    * how to install the dependencies of the project (both dependencies in the programming language of the project and potential other dependencies)
+    * how to run the tests of the project locally
+    * Ideally there might be a Dockerfile to make it easy to run the whole thing locally.
 
-
-
-* Take a project in some language an convert to another language.
+* A sugestion by Alex was: Take a project in some language an convert to another language.
 
 * [Video 7-1](https://youtu.be/8iG0cd7TU6s)
 * [Video 7-2](https://youtu.be/byJYSCO2oaQ)
 
+### Assignment 7
+
+* Set up locally and contribute to [Kantoniko](https://kantoniko.com/) and/or [PyDigger](https://pydigger.com/)
+* Pick one (or more) open source projects in your favorite language and run the tests locally.
+* If you can open an issue, send a PR to these projects
 
 ## Session 8
+
+* Pick up a project (Python, R, or PHP), set up the local environemt, run the tests locally.
+
+
+
+* dev.to mention the setting to use the Markdown editor
 
 * Testing PHP
 * Testing R
