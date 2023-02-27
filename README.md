@@ -16,7 +16,8 @@ https://osdc.code-maven.com/osdc-2023-01-public/
 * [Assignment 4](#assignment-4)
 * [Assignment 5](#assignment-5)
 * [Assignment 6](#assignment-6)
-* [Session 7 - next week](#session-7---next-week)
+* [Session 7](#session-7)
+* [Session 8](#session-8)
 
 ## Videos
 
@@ -437,18 +438,92 @@ git remote add fork git@github.com:szabgab/python-toolz.git
     * If you can set up GitHub Actions.
 
 
-## Session 7 - next week
+## Session 7
+
+* Alex invited you to look at his project and start contributing there. I'd say look at [our web site](https://osdc.code-maven.com/osdc-2023-01-public/). You have links to the GitHub and GitLab accounts to each one of the participants of the course. Find something that interests you and try to contribute.
+
+* We looked at the source code of [DEV.to](https://dev.to/) that is called [Forem](https://www.forem.com/) and is located [here in GitHub](https://github.com/forem/forem)
+After some failed searches among the issues we found the [discussion Shuly opened](https://github.com/forem/forem/discussions?discussions_q=author%3AShulyAvraham), the [discussion about auto-save](https://github.com/forem/forem/discussions/15862). We also [searched the issues](https://github.com/forem/forem/issues?q=is%3Aissue+is%3Aopen+autosave) and found [this](https://github.com/forem/forem/issues/18462) issue about the topic. It is unfortuate that the project does not provide enough response to these discussions and issues.
+
+
+* We also looked at the [zarr-python](https://github.com/zarr-developers/zarr-python/) project and specifically at [this PR](https://github.com/zarr-developers/zarr-python/pull/1299) that is related to [this issue](https://github.com/zarr-developers/zarr-python/issues/538) We found that it has not been touched for 2 months.
+
+* We then discussed the idea of creating a fork and accepting some of the PRs there for our private use. Here are the instruction to do that:
+
+
+```
+git clone URL                             # clone the project locally
+git checkout -b mymain                    # Create a branch that we will maintain. It is better not use the original main or master branches for this. (we use the branch-name szabgab for this in the video)
+
+git fetch origin pull/1299/head           # Use the PR number to fetch the code from the pull-request
+git checkout -b pr-1299 FETCH_HEAD        # Create a branch (using the PR number can be a good idea) based on what we have just fetched.
+git checkout mymain                       # Go to mymain
+git merge pr-1299                         # Merge the PR into "mymain"
+```
+
+First I showed this using a [simple PR](https://github.com/zarr-developers/zarr-python/pull/1357) and it worked.
+
+Then I tried with the one [we actually wanted](https://github.com/zarr-developers/zarr-python/pull/1299) and it had a nasty merge-conflict.
+
+Resolving that would require deep knowledge of the project so we have not tried to do that.
+
+We discuessed that it is probably the responsibilit of the PR-sender to make sure the PR can be merged without a conflict, but then it is very diffictul to do if the PR is not accepted quickly. We saw that there was a merge inside the PR. I mentioned that I would have used rebase there.
+
+
+* We saw a simple merge conflict resolution.
+
+```
+mkdir demo
+cd demo
+# edit README, add a line
+git init
+git add .
+git commit -m init
+
+git checkout -b first
+# edit README, add a line at the top
+git add .
+git commit -m first
+
+
+git checkout main
+# edit READEME, add a line at the bottom
+git add .
+git commit -m main
+
+
+git merge first   # this will open the default editor so you can type in the commit message for the merge.
+```
+
+Do the above, but this time change the middle line in both branches.
+The `git merge` will complain and create a file with markers showing which version came from which branch. You have to edit the file with your favorite editor to resolve the merge conflicts.
+There are various GUI-based editors that will make the experience nicer.
+
+However the better solution is to reduce the chances of conflict or even to avoid them. This can be done by working on the same `main` branch and pulling and pushing code frequently.
+
+Working in a separate branch is less ideal, but when preparing a PR that's the way to work. In that case try to make the PR as small as possible and try to get it merged as soon as possible. Follow the project and keep rebasing your branch to be up-to-date with the main development branch of the project.
 
 
 
 
+* We mentioned the Dockerfile I use to run projects locally. It can be found [here](https://github.com/szabgab/mydocker)
 
 
 * dev.to mention the setting to use the Markdown editor
 
-* Add GitHub Actions.
-
-* Demo project https://github.com/zarr-developers/zarr-python/ and PR https://github.com/zarr-developers/zarr-python/pull/1299
 
 
+
+* Take a project in some language an convert to another language.
+
+* [Video 7-1](https://youtu.be/8iG0cd7TU6s)
+* [Video 7-2](https://youtu.be/byJYSCO2oaQ)
+
+
+## Session 8
+
+* Testing PHP
+* Testing R
+
+* GitHub Actions for each one of them.
 
