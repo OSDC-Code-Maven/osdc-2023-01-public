@@ -17,7 +17,7 @@ https://osdc.code-maven.com/osdc-2023-01-public/
 * [Assignment 5](#assignment-5)
 * [Assignment 6](#assignment-6)
 * [Session 7](#session-7)
-* [Assignment 6](#assignment-6)
+* [Assignment 7](#assignment-7)
 * [Session 8](#session-8)
 
 ## Videos
@@ -405,7 +405,7 @@ docker run --rm -it python:3.11
 
 * Using [PyDigger](https://pydigger.com/) we found a simple python project called [Python-tools](https://github.com/zguillez/python-toolz) that had a [link to GitHub but no CI](https://pydigger.com/search/has-github-no-ci).
 * We found it has some file in the `__pycache__` folder added. Reported it in this [issue](https://github.com/zguillez/python-toolz/issues/1).
-* The added it to [.gitignore PR](https://github.com/zguillez/python-toolz/pull/2)
+* Then added it to [.gitignore PR](https://github.com/zguillez/python-toolz/pull/2)
 
 ```
 git clone git@github.com:zguillez/python-toolz.git
@@ -552,16 +552,38 @@ Working in a separate branch is less ideal, but when preparing a PR that's the w
 * Pick one (or more) open source projects in your favorite language and run the tests locally.
 * If you can open an issue, send a PR to these projects
 
-## Session 8
+## Session 8 planning
+
+* Show git stash
+
+```
+git stash
+git stash list
+git stash show -p
+git stash pop
+```
+
+* Docker "playground"
+    * https://github.com/szabgab/playground
+    * https://hub.docker.com/repository/docker/szabgab/playground/general
+
+* Pick up a project (Python, R, or PHP), set up the local environemt, run the tests locally.
+    * Python requests: https://dev.to/szabgab/development-environment-for-the-python-requests-package-eae
+
+* dev.to mention the setting to use the Markdown editor
+    https://github.com/forem/forem/issues/19214
+
+
+
+## Session 9 planning
 
 * Pick up a project (Python, R, or PHP), set up the local environemt, run the tests locally.
 
 
 
-* dev.to mention the setting to use the Markdown editor
-
 * Testing PHP
 * Testing R
 
 * GitHub Actions for each one of them.
+
 
