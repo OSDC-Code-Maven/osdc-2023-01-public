@@ -582,7 +582,22 @@ git stash drop 1
 * [Video 8-1](https://youtu.be/YQfCB4MMumY)
 * [Video 8-2](https://youtu.be/1fj_LSokdsM)
 
-## Session 9 planning
+## Session 9 R
+
+* [Video 9-1](https://youtu.be/v5pNmnCEDXg)
+* [Video 9-2](https://youtu.be/jUenUVWdgYE)
+
+* We tried to setup local development for several R-based projects.
+
+
+
+
+## Session 10 planning
+
+
+* dev.to mention the setting to use the Markdown editor
+    https://github.com/forem/forem/issues/19214
+
 
 * Pick up a project (Python, R, or PHP), set up the local environment, run the tests locally.
 
@@ -590,10 +605,5 @@ git stash drop 1
 * Testing R
 
 * GitHub Actions for each one of them.
-
-* dev.to mention the setting to use the Markdown editor
-    https://github.com/forem/forem/issues/19214
-
-
 
 
