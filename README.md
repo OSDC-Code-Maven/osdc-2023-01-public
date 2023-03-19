@@ -574,7 +574,6 @@ git stash drop 1
     * Image: https://hub.docker.com/r/mattrayner/lamp
     * Source code: https://github.com/mattrayner/docker-lamp
 
-
 * Pick up a project (Python, R, or PHP), set up the local environemt, run the tests locally.
     * Python requests: https://dev.to/szabgab/development-environment-for-the-python-requests-package-eae
     * Jinja has a separate file of CONTRIBUTING.rst https://github.com/pallets/jinja
@@ -583,22 +582,18 @@ git stash drop 1
 * [Video 8-1](https://youtu.be/YQfCB4MMumY)
 * [Video 8-2](https://youtu.be/1fj_LSokdsM)
 
-
-
-* dev.to mention the setting to use the Markdown editor
-    https://github.com/forem/forem/issues/19214
-
-
-
 ## Session 9 planning
 
-* Pick up a project (Python, R, or PHP), set up the local environemt, run the tests locally.
-
-
+* Pick up a project (Python, R, or PHP), set up the local environment, run the tests locally.
 
 * Testing PHP
 * Testing R
 
 * GitHub Actions for each one of them.
+
+* dev.to mention the setting to use the Markdown editor
+    https://github.com/forem/forem/issues/19214
+
+
 
 
