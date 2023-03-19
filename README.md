@@ -559,16 +559,31 @@ Working in a separate branch is less ideal, but when preparing a PR that's the w
 ```
 git stash
 git stash list
-git stash show -p
-git stash pop
+git stash show -p     (defaults to 0)
+git stash show -p 2
+git stash pop         (defaults to 0)
+git stash drop        (defaults to 0)
+git stash drop 1
 ```
 
 * Docker "playground"
     * https://github.com/szabgab/playground
     * https://hub.docker.com/repository/docker/szabgab/playground/general
 
+* We also saw:
+    * Image: https://hub.docker.com/r/mattrayner/lamp
+    * Source code: https://github.com/mattrayner/docker-lamp
+
+
 * Pick up a project (Python, R, or PHP), set up the local environemt, run the tests locally.
     * Python requests: https://dev.to/szabgab/development-environment-for-the-python-requests-package-eae
+    * Jinja has a separate file of CONTRIBUTING.rst https://github.com/pallets/jinja
+    * requests has some information in the README file
+
+* [Video 8-1](https://youtu.be/YQfCB4MMumY)
+* [Video 8-2](https://youtu.be/1fj_LSokdsM)
+
+
 
 * dev.to mention the setting to use the Markdown editor
     https://github.com/forem/forem/issues/19214
