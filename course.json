@@ -1,7 +1,7 @@
 {
     "title": "OSDC 2023.01 Public in Hebrew",
     "id": "osdc-2023-01-public",
-    "pages": true,
+    "github_pages": true,
     "projects": true,
     "start_date": "2023.01.08",
     "end_date": null
