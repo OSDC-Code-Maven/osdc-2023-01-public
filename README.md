@@ -589,10 +589,19 @@ git stash drop 1
 
 * We tried to setup local development for several R-based projects.
 
+## Session 10 Overview of the OSDC web site
 
+We went over the current setup of the [OSDC main site](https://osdc.code-maven.com/) and the [Open source by organizations](https://osdc.code-maven.com/open-source-by-organizations/) including covering the GitHub Actions and how to set them up locally.
 
+We also saw the way the web site of each individual course is generated.
 
-## Session 10 planning
+* Discussed caching of GitHub Actions
+* Dependabot
+
+* [Video 10-1](https://youtu.be/Xg133qw0rs8)
+* [Video 10-2](https://youtu.be/GNGcoU8jLWA)
+
+## Session 11 planning
 
 
 * dev.to mention the setting to use the Markdown editor
