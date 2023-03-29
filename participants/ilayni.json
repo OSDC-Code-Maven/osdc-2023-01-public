@@ -9,4 +9,8 @@
             "published_at": "2023-01-08T20:29:48Z"
         }
       ]
+    "projects": [
+      "https://github.com/realpython",
+      "https://github.com/realpython/materials"
+	]
 }
